@@ -18,10 +18,10 @@
       </form>
       <ul class="goods-section">
         <li>
-          <a href="#">Закладки: 0</a>
+          <a class="bookmarks" href="#">Закладки: 0</a>
         </li>
         <li>
-          <a href="#">Корзина: 0</a>
+          <a class="basket" href="#">Корзина: 0</a>
         </li>
         <li>
           <a class="ordering" href="#">Оформить заказ</a>
@@ -66,13 +66,13 @@
 
     <ul class="breadcrumbs">
       <li>
-        <a href="index.html">ДОМ</a>
+        <a class="breadcrumbs-way" href="index.html">ДОМ</a>
       </li>
       <li>
-        <a href="#">Каталог</a>
+        <a class="breadcrumbs-way" href="#">Каталог</a>
       </li>
       <li>
-        <a href="#">Инструмент</a>
+        <a class="breadcrumbs-way" href="#">Инструмент</a>
       </li>
       <li class="breadcrumbs-current">
         Перфораторы
@@ -126,13 +126,15 @@
       <div class="sort">
         <span class="filter-sort">Сортировка:</span>
         <ul class="sorting">
-          <li>По цене</li>
+          <li class="sorting-item">По цене</li>
           <li class="sorting-item">
             <a class="choice-filter" href="#">По типу</a>
           </li>
           <li class="sorting-item">
             <a class="choice-filter" href="#">По функционалу</a>
           </li class="sorting-item">
+        </ul>
+        <ul class="sorting-btn">
           <li>
             <a class="choice-filter btn-up" href="#">По возрастанию</a>
           </li class="sorting-item">
@@ -152,6 +154,11 @@
           </a>
           <p class="old-price">22500 Р.</p>
           <p class="actual-price">15500 Р.</p>
+          <!-- кнопки при наведении -->
+          <div class="prompting">
+            <a class="btn-buy" href="#">Купить</a>
+            <a class="btn-basket" href="#">В закладки</a>
+          </div>
         </li>
 
         <li class="card">
@@ -162,6 +169,11 @@
           </a>
           <p class="old-price">30500 Р.</p>
           <p class="actual-price">25500 Р.</p>
+          <!-- кнопки при наведении -->
+          <div class="prompting">
+            <a class="btn-buy" href="#">Купить</a>
+            <a class="btn-basket" href="#">В закладки</a>
+          </div>
         </li>
 
         <li class="card">
@@ -171,6 +183,11 @@
             Перфоратор BOSCH BFG 2000
           </a>
           <p class="actual-price">12500 Р.</p>
+          <!-- кнопки при наведении -->
+          <div class="prompting">
+            <a class="btn-buy" href="#">Купить</a>
+            <a class="btn-basket" href="#">В закладки</a>
+          </div>
         </li>
 
         <li class="card">
@@ -181,6 +198,11 @@
           </a>
           <p class="old-price">22500 Р.</p>
           <p class="actual-price">15500 Р.</p>
+          <!-- кнопки при наведении -->
+          <div class="prompting">
+            <a class="btn-buy" href="#">Купить</a>
+            <a class="btn-basket" href="#">В закладки</a>
+          </div>
         </li>
 
         <li class="card">
@@ -191,6 +213,11 @@
           </a>
           <p class="old-price">30500 Р.</p>
           <p class="actual-price">25500 Р.</p>
+          <!-- кнопки при наведении -->
+          <div class="prompting">
+            <a class="btn-buy" href="#">Купить</a>
+            <a class="btn-basket" href="#">В закладки</a>
+          </div>
         </li>
 
         <li class="card">
@@ -200,6 +227,11 @@
             Перфоратор BOSCH BFG 2000
           </a>
           <p class="actual-price">12500 Р.</p>
+          <!-- кнопки при наведении -->
+          <div class="prompting">
+            <a class="btn-buy" href="#">Купить</a>
+            <a class="btn-basket" href="#">В закладки</a>
+          </div>
         </li>
 
         <li class="card">
@@ -210,6 +242,11 @@
           </a>
           <p class="old-price">22500 Р.</p>
           <p class="actual-price">15500 Р.</p>
+          <!-- кнопки при наведении -->
+          <div class="prompting">
+            <a class="btn-buy" href="#">Купить</a>
+            <a class="btn-basket" href="#">В закладки</a>
+          </div>
         </li>
 
         <li class="card">
@@ -220,6 +257,11 @@
           </a>
           <p class="old-price">30500 Р.</p>
           <p class="actual-price">25500 Р.</p>
+          <!-- кнопки при наведении -->
+          <div class="prompting">
+            <a class="btn-buy" href="#">Купить</a>
+            <a class="btn-basket" href="#">В закладки</a>
+          </div>
         </li>
 
         <li class="card">
@@ -229,6 +271,11 @@
             Перфоратор BOSCH BFG 2000
           </a>
           <p class="actual-price">12500 Р.</p>
+          <!-- кнопки при наведении -->
+          <div class="prompting">
+            <a class="btn-buy" href="#">Купить</a>
+            <a class="btn-basket" href="#">В закладки</a>
+          </div>
         </li>
 
       </ul>
@@ -243,7 +290,7 @@
     </section>
 
     <div class="drill-presses">
-      <h2>Пара слов о перфораторах</h2>
+      <h2 class="about-drill">Пара слов о перфораторах</h2>
       <p>Перфоратор - универсальный строительный инструмент. Предназначен
         для сверления и долбления отверстий в кирпиче, бетоне и камне.
         Сущестуют электромеханические и пневматические перфораторы.
