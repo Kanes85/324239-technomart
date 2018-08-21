@@ -13,18 +13,20 @@
     <div class="page-header-top">
       <div class="header-logo">
         <a class="logo-on-main" href="index.html">
-        <img class="logo" src="img/logo.png" width="113" height="20" alt="Техномарт">
+          <img class="logo" src="img/logo.png" width="113" height="20" alt="Техномарт">
+        </a>
       </div>
-      <form name="search" method="get">
-        <input type="text" name="searching" value="Поиск">
-        <input type="image" src="img/svg/icon-search.svg" alt="Поиск">
+      <form class="search-form" name="search" action="https://echo.htmlacademy.ru" method="get">
+        <label for="search-goods" class="visually-hidden">Поиск товара:</label>
+        <input id="search-goods" class="form-search" type="text" name="search" placeholder="Поиск:">
+        <input class="icon-form-search" type="image" src="img/svg/icon-search.svg" alt="Поиск">
       </form>
       <ul class="goods-section">
         <li>
-          <a class="bookmarks" href="#">Закладки: 0</a>
+          <a class="bookmarks" href="#">Закладки: <span>0</span></a>
         </li>
         <li>
-          <a class="basket" href="#">Корзина: 0</a>
+          <a class="basket" href="#">Корзина: <span>0</span></a>
         </li>
         <li>
           <a class="ordering" href="#">Оформить заказ</a>
@@ -85,43 +87,77 @@
     <h2 class="perforator-block">Перфораторы</h2>
 
     <section class="filter">
-      <!-- Здесь будет форма фильтрации товара -->
-      <!-- <h2 class="visually-hidden">Фильтр:</h2> Разве это не заглавие блока Фильтров?
+      <h2 class="visually-hidden">Фильтр:</h2>
 
-      <span class="filter-block">Фильтр:</span>
+      <p class="filter-block">Фильтр:</p>
 
-      <form class="filter-manufacturers" action="index.html" method="post">
-      <b>Цена:</b>
-         ПОЛЗУНОК
+      <form class="filter-manufacturers" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset class="price-filter">
+          <legend>Цена:</legend>
+          <p class="filter-item">
+            <label class="visually-hidden" for="price-id">Выбор диапозона цены</label>
+            <input class="switch-price" id="price-id" type="range" max="50000" min="0" name="price">
+          </p>
+          <p class="filter-item">
+            <label class="visually-hidden" for="price-min">Цена от</label>
+            <input class="filter-price-min" id="price-min" type="text" name="minimal">
+          </p>
+          <p class="filter-item">
+            <label class="visually-hidden" for="price-max">Цена до</label>
+            <input class="filter-price-max" id="price-max" type="text" name="maximal">
+          </p>
+       </fieldset>
 
+      <fieldset class="manufacturer-filter">
+        <legend>Производители:</legend>
+        <ul class="filter-row">
+          <li class="filter-item">
+            <input class="visually-hidden filter-input filter-input-checkbox"
+            type="checkbox" id="filter-bosch" name="bosch" checked>
+            <label for="filter-bosch">Bosch</label>
+          </li>
+          <li class="filter-item">
+            <input class="visually-hidden filter-input filter-input-checkbox"
+              type="checkbox" id="filter-interscol" name="interscol">
+            <label for="filter-interscol">Интерскол</label>
+          </li>
+          <li class="filter-item">
+            <input class="visually-hidden filter-input filter-input-checkbox"
+            type="checkbox" id="filter-makita" name="makita" checked>
+            <label for="filter-makita">Makita</label>
+          </li>
+          <li class="filter-item">
+            <input class="visually-hidden filter-input filter-input-checkbox"
+            type="checkbox" id="filter-dewalt" name="dewalt">
+            <label for="filter-dewalt">Dewalt</label>
+          </li>
+          <li class="filter-item">
+            <input class="visually-hidden filter-input filter-input-checkbox"
+            type="checkbox" id="filter-hitachi" name="hitachi">
+            <label for="filter-hitachi">Hitachi</label>
+          </li>
+        </ul>
+      </fieldset>
 
-        <b>Производители:</b>
-        <label for="bosch">BOSCH</label>
-        <input type="checkbox" id="bosch" name="manufacturers" value="bosch">
-        <br>
-        <label for="interscol">ИНТЕРСКОЛ</label>
-        <input type="checkbox" id="" name="manufacturers" value="interscol">
-        <br>
-        <label for="makita">MAKITA</label>
-        <input type="checkbox" id="makita" name="manufacturers" value="makita">
-        <br>
-        <label for="dewalt">DEWALT</label>
-        <input type="checkbox" id="dewalt" name="manufacturers" value="dewalt">
-        <br>
-        <label for="hitachi">HITACHI</label>
-        <input type="checkbox" id="hitachi" name="manufacturers" value="hitachi">
-        <br>
+      <fieldset class="power-filter">
+        <legend>Питание:</legend>
+        <ul class="filter-row">
+          <li class="filter-item">
+            <input class="visually-hidden filter-input filter-input-radio"
+              id="filter-accumulator" type="radio" name="power-supply"
+              value="accumulator" checked>
+            <label for="filter-accumulator">Аккумуляторные</label>
+          </li>
+          <li class="filter-item">
+            <input class="visually-hidden filter-input filter-input-radio"
+            id="filter-online" type="radio" name="power-supply" value="online">
+            <label for="filter-online">Сетевые</label>
+          </li>
+        </ul>
+      </fieldset>
+        <button class="btn-filter" type="submit">Показать</button>
 
-        <b>Питание:</b>
-        <label for="accumulator">Аккумуляторные</label>
-        <input type="radio" id="accumulator" name="power-supply" value="accumulator">
-        <br>
-        <label for="online">Сетевые</label>
-        <input type="radio" id="online" name="power-supply" value="online">
-        <br>
-        <input type="submit" value="Показать">
-
-      </form> -->
+      </form>
     </section>
 
     <section class="filter-goods">
@@ -135,15 +171,15 @@
           </li>
           <li class="sorting-item">
             <a class="choice-filter" href="#">По функционалу</a>
-          </li class="sorting-item">
+          </li>
         </ul>
         <ul class="sorting-btn">
-          <li>
+          <li class="sorting-item">
             <a class="choice-filter btn-up" href="#">По возрастанию</a>
-          </li class="sorting-item">
-          <li>
+          </li>
+          <li class="sorting-item">
             <a class="choice-filter btn-down" href="#">По убыванию</a>
-          </li class="sorting-item">
+          </li>
         </ul>
       </div>
 
@@ -390,9 +426,9 @@
 
     <!-- МОДАЛЬНОЕ ОКНО -->
     <b>Товар добавлен в корзину!</b>
-    <a class="button" href="#">Оформить заказы</a>
+    <a class="btn-place-order" href="#">Оформить заказы</a>
     <a class="btn-continue" href="#">Продолжить покупки</a>
-    <span class="modal-close">x</span>
+    <button class="modal-close">Закрыть</button>
 
 
 </body>

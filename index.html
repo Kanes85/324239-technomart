@@ -13,16 +13,17 @@
         <div class="header-logo">
           <img class="logo" src="img/logo.png" width="113" height="20" alt="Техномарт">
         </div>
-        <form name="search" method="get">
-          <input type="text" name="searching" value="Поиск">
-          <input type="image" src="img/svg/icon-search.svg" alt="Поиск">
+        <form class="search-form" name="search" action="https://echo.htmlacademy.ru" method="get">
+          <label for="search-goods" class="visually-hidden">Поиск товара:</label>
+          <input id="search-goods" class="form-search" type="text" name="search" placeholder="Поиск:">
+          <input class="icon-form-search" type="image" src="img/svg/icon-search.svg" alt="Поиск">
         </form>
         <ul class="goods-section">
           <li>
-            <a class="bookmarks" href="#">Закладки: 0</a>
+            <a class="bookmarks" href="#">Закладки: <span>0</span></a>
           </li>
           <li>
-            <a class="basket" href="#">Корзина: 0</a>
+            <a class="basket" href="#">Корзина: <span>0</span></a>
           </li>
           <li>
             <a class="ordering" href="#">Оформить заказ</a>
@@ -67,18 +68,22 @@
         <h2 class="visually-hidden">Промо-блок</h2>
 
         <ul class="promo-card">
+
           <li class="promo-data">
             <h3 class="promo-title">Материалы</h3>
             <a class="promo-btn" href="#">На любой вкус</a>
           </li>
+
           <li class="promo-data">
             <h3 class="promo-title">Инструмент</h3>
             <a class="promo-btn" href="#">На все случаи</a>
           </li>
+
           <li class="promo-data">
             <h3 class="promo-title">Техника</h3>
             <a class="promo-btn" href="#">Для стройки</a>
           </li>
+
         </ul>
 
         <!-- КАРУСЕЛЬ -->
@@ -102,14 +107,17 @@
           </div>
 
           <ul class="promo-proposals">
+
             <li class="promo-bid">
               <h3 class="promo-title">Скидки 50%</h3>
               <a class="promo-btn" href="#">На 350 товаров</a>
             </li>
+
             <li class="promo-bid">
               <h3 class="promo-title">Доставка</h3>
               <a class="promo-btn" href="#">Бесплатно</a>
             </li>
+
           </ul>
         </div>
 
@@ -329,10 +337,9 @@
             <img class="logo" src="img/logo.png" width="113" height="20"
             alt="Техномарт">
           </div>
-          <p>
-            <span class="footer-addres">г.Санкт-Петербург,
-              ул. Б.Конюшенная, д.19/8</span>
-            <span class="footer-phone">+7(812)555-05-55</span>
+          <p class="footer-addres">
+            г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8<br>
+            +7(812)555-05-55
           </p>
         </div>
 
@@ -405,21 +412,27 @@
 
     <!-- МОДАЛЬНЫЕ ОКНА -->
     <!-- Модальное окно обратной связи -->
-    <!-- <form class="" action="index.html" method="post">
-      <label for="name">Ваше имя:</label>
-      <input type="text" id="name" name="name" value="Имя Фамилия">
-      <br>
-      <label for="mail">Ваш e-mail:</label>
-      <input type="mail" id="mail" name="mail" value="email@example.com">
-      <br>
-      <label for="letter">Текст письма:</label>
-      <input type="texteria" id="letter" name="letter" value="В свободной форме">
-      <input type="submit" name="send" value="Отправить">
-    </form> -->
-    <span class="modal-close">x</span>
+    <form class="form-feedback" action="https://echo.htmlacademy.ru" method="post">
+      <p class="feedback-item">
+        <label for="feedback-name">Ваше имя:</label>
+        <input type="text" id="feedback-name" name="name" placeholder="Имя Фамилия">
+      </p>
+      <p class="feedback-item">
+        <label for="feedback-mail">Ваш e-mail:</label>
+        <input type="email" id="feedback-mail" name="mail" placeholder="email@example.com">
+      </p>
+      <p class="feedback-item">
+        <label for="feedback-letter">Текст письма:</label>
+        <textarea id="feedback-letter" rows="6" cols="30" name="letter" placeholder="В свободной форме"></textarea>
+      </p>
+      <button class="button button-feedback" type="submit" name="send">Отправить</button>
+    </form>
+    <button class="modal-close">Закрыть</button>
 
     <!-- Модальное окно карты -->
-    <span class="modal-close">x</span>
+    <img src="img/map-big.jpg" width="940" height="446" alt="г.Санкт-Петербург,
+      ул. Б.Конюшенная, д.19/8">
+    <button class="modal-close">Закрыть</button>
 
 
     <!-- <script type="text/javascript" src="js/script.js"></script> -->
