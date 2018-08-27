@@ -1,1 +1,348 @@
-/*****************HEADER****************/
+
+/* Используемые шрифты */
+/* font-family: "Cuprum", Arial,  sans-serif; */
+/* font-family: "PT Sans", Arial, sans-serif; */
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Cuprum", Arial,  sans-serif;;
+  font-size: 13px;
+  font-weight: 400;
+  color: #000000;
+  line-height: 24px;
+
+  background-color: #ffffff;
+}
+
+/**************** HEADER ****************/
+
+.page-header {
+  color: #000000;
+  background-color: #f3f7f8;
+}
+
+.page-header-top {
+  background-color: #293449;
+}
+
+.conteiner {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.header-logo .logo {
+  padding: 12px 55px;
+  background-color: #ee3643;
+  border-bottom: 5px solid #b52933;
+}
+
+.search-form .form-search {
+  width: 270px;
+  height: 42px;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+}
+
+.search-form .form-search::placeholder {
+  font-size: 17px;
+  line-height: 18px;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.search-form .icon-search {
+  background-color: transparent;
+  border: none;
+}
+
+.goods-section {
+  list-style: none;
+}
+
+.goods-section a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.ordering {
+  background-color: #63a63e;
+}
+
+.header-slogan {
+  width: 215px;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.header-info-phone {
+  display: inline-block;
+  font-size: 21px;
+  line-height: 21px;
+  color: #ee3643;
+  border: 3px solid #ffffff;
+  padding: 12px 68px;
+  text-align: center;
+}
+
+.header-info-address {
+  color: #32425c;
+  font-size: 14px;
+}
+
+.header-btn {
+  text-decoration: none;
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+  background-color: #ffffff;
+}
+
+.main-menu .navigation {
+  list-style: none;
+  display: flex;
+}
+
+.main-menu .main-nav {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 17px;
+  background-color: #32425c;
+  border-bottom: 5px solid #293449;
+}
+
+/**************** PROMO BLOCK ****************/
+
+.promo-card,
+.promo-proposals {
+  list-style: none;
+}
+
+.promo-data,
+.promo-bid {
+  width: 300px;
+  height: 123px;
+}
+
+.color-orange {
+  background-color: #ffbf47;
+}
+
+.color-blue {
+  background-color: #3bbce3;
+}
+
+.color-purple {
+  background-color: #dc91d8;
+}
+
+.color-green {
+  background-color: #8ed78f;
+}
+
+.color-lightorange {
+  background-color: #ffc047;
+}
+
+.promo-data h3,
+.promo-bid h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.promo-data a,
+.promo-bid a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.promo-slider .promo-name {
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.promo-slider .promo-description {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.button {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #ee3643;
+  font-size: 14px;
+  line-height: 18px;
+  border-radius: 2px;
+}
+
+/**************** POPULAR GOODS & MANUFACTURER ****************/
+
+.popular-goods .title-block,
+.manufacturers .title-block{
+  color: #32425c;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  background-color: #f9f5f0;
+}
+
+.card-product,
+.cards-manufacturers {
+  list-style: none;
+}
+
+.card-product img {
+  border: 1px solid #eaeaea;
+}
+.card {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-weight: bold;
+}
+
+.card .name-goods  {
+  display: inline-block;
+  width: 160px;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.old-price {
+  color: #a9a9a9;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.actual-price {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 18px;
+  background-color: #ee3643;
+}
+
+.prompting a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.prompting .btn-buy {
+  color: #ffffff;
+  background-color: #63a63e;
+  border-radius: 2px;
+  box-shadow: 0 1px 2px 1px #367315;
+}
+
+.btn-basket {
+  color: #32425c;
+  border: 3px solid #63a63e;
+  border-radius: 2px;
+}
+
+.cards-manufacturers img {
+  border: 1px solid #eaeaea;
+}
+
+/**************** SERVISE ****************/
+
+.service {
+  /* width: 100%; */
+  background-color: #f4f8f9;
+}
+
+
+
+
+
+
+
+
+
+
+/**************** ABOUT US ****************/
+
+/**************** FOOTER ****************/
+
+/**************** MODAL ****************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* THE END */
