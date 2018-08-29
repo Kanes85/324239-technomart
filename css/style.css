@@ -68,6 +68,10 @@ body {
   background-color: #212a3a;
 }
 
+.basket-in {
+  background-color: #ee3643;
+}
+
 .search-form .form-search:focus {
   background-color: #ffffff;
   color: #000000;
@@ -163,6 +167,7 @@ body {
 
 .main-menu .navigation {
   list-style: none;
+  padding-left: 0;
   display: flex;
 }
 
