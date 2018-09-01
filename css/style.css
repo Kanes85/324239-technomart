@@ -4,7 +4,7 @@
 /* font-family: "PT Sans", Arial, sans-serif; */
 
 body {
-  width: 100%;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
 
@@ -22,16 +22,35 @@ body {
   margin: 0 auto;
 }
 
+/*Прячет элементы с классом visually-hidden*/
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /**************** HEADER ****************/
 
 .page-header {
   color: #000000;
-
+  min-height: 320px;
+  margin-bottom: 59px;
   background-color: #f3f7f8;
 }
 
 .page-header-top {
+  height: 42px;
   background-color: #293449;
+  margin-bottom: 46px;
+}
+
+.page-header-top .conteiner {
+  display: flex;
 }
 
 .header-logo .logo {
@@ -51,11 +70,15 @@ body {
   border-color: #8e1e26;
 }
 
+.search-form {
+  position: relative;
+}
+
 .search-form .form-search {
   box-sizing: border-box;
   width: 270px;
   height: 42px;
-  padding-left: 10px;
+  padding-left: 48px;
 
   font-size: 17px;
   line-height: 18px;
@@ -79,7 +102,6 @@ body {
 
 .search-form .form-search:focus {
   box-sizing: border-box;
-  padding-left: 10px;
 
   font-size: 17px;
   line-height: 18px;
@@ -89,8 +111,6 @@ body {
 }
 
 .search-form .form-search::placeholder {
-  padding-left: 10px;
-
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
@@ -99,17 +119,47 @@ body {
 .search-form .icon-search {
   background-color: transparent;
   border: none;
+  padding: 0;
+  position: absolute;
+  top: 12px;
+  left: 17px;
 }
 
 .goods-section {
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 450px;
+  height: 42px;
+  padding: 0;
+  margin: 0;
+}
+
+.goods-section li {
+  width: 150px;
+  text-align: center;
+  padding: 0;
 }
 
 .goods-section a {
+  display: block;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
   text-decoration: none;
+  text-align: center;
+  padding: 12px;
+}
+
+.goods-section .bookmarks {
+  padding-left: 25px;
+  padding-right: 10px;
+}
+
+.goods-section .basket {
+  padding-left: 30px;
+  padding-right: 10px;
 }
 
 .bookmarks:active,
@@ -134,9 +184,24 @@ body {
   background-color: #518534;
 }
 
+/* БЛОК ИНФОРМАЦИИ В HEADER */
+
+.header-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.slogan {
+  width: 313px;
+}
+
 .header-slogan {
   width: 215px;
-
+  margin: 0;
+  padding-top: 3px;
+  padding-left: 52px;
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
@@ -144,9 +209,19 @@ body {
   font-style: italic;
 }
 
+.header-contacts {
+  padding-left: 10px;
+  width: 313px;
+}
+
 .header-info-phone {
   display: inline-block;
-  padding: 12px 68px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 71px;
+  padding-right: 50px;
+  margin: 0;
+  margin-bottom: 4px;
 
   font-size: 21px;
   line-height: 21px;
@@ -159,16 +234,39 @@ body {
 .header-info-address {
   font-size: 14px;
   color: #32425c;
+  margin: 0;
+  padding-left: 9px;
 }
 
 /* ВХОД и РЕГИСТРАЦИЯ */
+
+.header-join {
+  box-sizing: border-box;
+  width: 313px;
+  padding-top: 12px;
+  padding-left: 29px;
+}
+
 .header-btn {
   font-size: 21px;
   line-height: 21px;
   color: #000000;
   text-decoration: none;
-
   background-color: #ffffff;
+  border: none;
+}
+
+.enter {
+  padding: 10px;
+  padding-left: 47px;
+  padding-right: 26px;
+  margin-right: 8px;
+}
+
+.registration {
+  padding: 10px;
+  padding-left: 22px;
+  padding-right: 25px;
 }
 
 .header-btn:hover,
@@ -222,25 +320,43 @@ body {
 
 
 /* МЕНЮ НАВИГАЦИИ */
+
+
 .main-menu .navigation {
+  width: 940px;
   display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+
   padding-left: 0;
+  margin: 0;
 
   list-style: none;
 }
 
+.navigation li {
+  min-width: 127px;
+  /* flex-grow: 1; */
+  flex-shrink: 0;
+}
+
+.navigation li:nth-child(5) {
+  flex-grow: 1;
+}
+
 .main-menu .main-nav {
+  display: block;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
+  text-align: center;
   text-decoration: none;
-
+  padding: 19px;
   background-color: #32425c;
   border-bottom: 5px solid #293449;
 }
 
-.main-menu .main-nav:hover,
-.main-menu .main-nav:focus {
+.main-menu .main-nav:hover {
   background-color: #293449;
 }
 
@@ -272,15 +388,30 @@ body {
 
 /**************** PROMO BLOCK ****************/
 
+.promo-top {
+  margin-bottom: 45px;
+}
+
 .promo-card,
 .promo-proposals {
   list-style: none;
 }
 
+.promo-card {
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
 .promo-data,
 .promo-bid {
+  box-sizing: border-box;
   width: 300px;
   height: 123px;
+  position: relative;
 }
 
 .color-orange {
@@ -308,16 +439,35 @@ body {
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
+  position: absolute;
+  margin: 0;
+  left: 22px;
+  top: 21px;
 }
 
 .promo-btn {
+  display: block;
+  box-sizing: border-box;
+  width: 135px;
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+  margin: 0;
+  border-radius: 3px;
+  position: absolute;
+  top: 63px;
+  left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.color-purple .promo-btn {
+  left: 22px;
 }
 
 .promo-btn:hover,
@@ -329,22 +479,50 @@ body {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+/* SLADER */
+
+.promo-slider {
+  display: flex;
+}
+
+.promo-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo-proposals {
+  padding: 0;
+  margin: 0;
+}
+
+.color-green {
+  margin-bottom: 20px;
+}
+
+.slide {
+  position: relative;
+}
+
 .promo-slider .promo-name {
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
   text-transform: uppercase;
-
-  background-color: grey; /*временный фон для видимости*/
+  position: absolute;
+  top: 23px;
+  left: 23px;
+  margin: 0;
 }
 
 .promo-slider .promo-description {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-
-  background-color: grey; /*временный фон для видимости*/
+  margin: 0;
+  position: absolute;
+  top: 61px;
+  left: 24px;
 }
 
 .button {
@@ -355,11 +533,17 @@ body {
   text-decoration: none;
 
   background-color: #ee3643;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
-.button:hover,
-.button:focus {
+.button-slide {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  padding: 10px 48px;
+}
+
+.button:hover {
   background-color: #ca2c37;
 }
 
@@ -525,6 +709,12 @@ body {
 
 /**************** POPULAR GOODS & MANUFACTURER ****************/
 
+.header-goods,
+.header-manufacturers {
+  position: relative;
+  margin-bottom: 21px;
+}
+
 .popular-goods .title-block,
 .manufacturers .title-block {
   font-weight: 400;
@@ -532,13 +722,58 @@ body {
   line-height: 30px;
   color: #32425c;
   text-transform: uppercase;
-
   background-color: #f9f5f0;
+  margin: 0;
 }
+
+.popular-goods .title-block {
+  padding-top: 29px;
+  padding-bottom: 30px;
+  padding-left: 28px;
+}
+
+.manufacturers .title-block {
+  padding-top: 29px;
+  padding-bottom: 30px;
+  padding-left: 24px;
+}
+
+.button-popular {
+  position: absolute;
+  top: 25px;
+  right: 24px;
+  padding: 10px 55px;
+}
+
+.button-manufacturers {
+  position: absolute;
+  top: 23px;
+  right: 25px;
+  padding: 10px 68px;
+}
+
+/* КАРТОЧКИ ТОВАРОВ */
 
 .card-product,
 .cards-manufacturers {
   list-style: none;
+}
+
+.card-product {
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 14px;
+}
+
+.card {
+  box-sizing: border-box;
+  min-width: 220px;
+  position: relative;
+  font-weight: bold;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .card img {
@@ -552,12 +787,10 @@ body {
   0 9px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
-.card {
-  font-weight: bold;
-  font-family: "PT Sans", Arial, sans-serif;
-}
-
 .card .name-goods {
+  position: absolute;
+  bottom: 107px;
+  left: 29px;
   display: inline-block;
   width: 160px;
 
@@ -573,14 +806,21 @@ body {
   line-height: 18px;
   color: #a9a9a9;
   text-decoration: line-through;
+  position: absolute;
+  bottom: 77px;
+  left: 78px;
 }
 
 .actual-price { /*Актуальная цена*/
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
-
+  position: absolute;
+  bottom: 30px;
+  left: 44px;
+  border-radius: 3px;
   background-color: #ee3643;
+  padding: 10px 35px;
 }
 
 .prompting a {
@@ -626,6 +866,12 @@ body {
   color: rgba(50, 66, 92, 0.3);
 
   border-color: rgba(50, 66, 92, 0.3);
+}
+
+/* КАРТОЧКИ ПРОИЗВОДИТЕЛЕЙ */
+
+.manufacturers {
+  margin-bottom: 56px;
 }
 
 .cards-manufacturers {
@@ -707,6 +953,8 @@ body {
 
 .service {
   background-color: #f4f8f9;
+  min-height: 521px;
+  border-top: 1px solid transparent;
 }
 
 .service-title {
@@ -714,27 +962,51 @@ body {
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+  margin: 0;
+  letter-spacing: -1px;
+  margin-top: 64px;
+  margin-bottom: 27px;
 }
 
 .service-description {
-  width: 360px;
-
+  width: 400px;
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+  margin: 0;
+  margin-bottom: 68px;
 }
 
 .service-choice {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  width: 240px;
+}
+
+.service-choice li {
+  width: 240px;
+  height: 61px;
 }
 
 .service-choice a {
+  width: 240px;
+  box-sizing: border-box;
+  display: block;
   font-size: 21px;
   line-height: 30px;
   color: #ffffff;
   text-decoration: none;
+  padding-left: 22px;
+  padding-top: 12px;
+  padding-bottom: 17px;
 
   background-color: #32425c;
+  border-top: 1px solid #4d637b;
+  border-bottom: 1px solid #293449;
 }
 
 .service-choice a:hover {
@@ -743,8 +1015,25 @@ body {
 
 .service-choice a:focus {
   color: #32425c;
+  border-color: #ffffff;
 
   background-color: #ffffff;
+}
+
+.carousel {
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.service-slider {
+  width: 620px;
+}
+
+.service-delivery p {
+  width: 260px;
+  margin: 0;
+
 }
 
 .slider-title {
@@ -752,6 +1041,7 @@ body {
   line-height: 36px;
   color: #32425c;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .service-slider p {

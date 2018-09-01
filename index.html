@@ -41,16 +41,18 @@
 
     <div class="page-header-info">
       <div class="conteiner">
-        <div class="slogan">
-          <h1 class="header-slogan">Интернет-магазин строительных материаловм и&nbsp;инструментов для ремонта</h1>
-        </div>
-        <div class="header-contacts">
-          <p class="header-info-phone">+7 (812) 555-05-55</p>
-          <p class="header-info-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        </div>
-        <div class="header-join">
-          <a class="header-btn enter" href="#">Войти</a>
-          <a class="header-btn registration" href="#">Регистрация</a>
+        <div class="header-info">
+          <div class="slogan">
+            <h1 class="header-slogan">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
+          </div>
+          <div class="header-contacts">
+            <p class="header-info-phone">+7 (812) 555-05-55</p>
+            <p class="header-info-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          </div>
+          <div class="header-join">
+            <a class="header-btn enter" href="#">Войти</a>
+            <a class="header-btn registration" href="#">Регистрация</a>
+          </div>
         </div>
 
 
@@ -97,19 +99,19 @@
       <!-- КАРУСЕЛЬ -->
       <div class="promo-bottom">
         <div class="promo-slider">
-          <div class="slider-drill">
+          <div class="slider-drill slide">
             <h3 class="promo-name">Дрели</h3>
             <p class="promo-description">Соседям на радость!</p>
             <img src="img/sliade-1.jpg" width="620" height="266" alt="Каталог дрелей">
-            <a class="button" href="#">Открыть каталог</a>
+            <a class="button button-slide" href="#">Открыть каталог</a>
           </div>
 
-          <div class="slider-puncher">
+          <!-- <div class="slider-puncher slide">
             <h3 class="promo-name">Перфораторы</h3>
             <p class="promo-description">Настоящие мужские игрушки</p>
             <img src="img/sliade-2.jpg" width="620" height="266" alt="Каталог перфораторов">
-            <a class="button" href="catalog.html">Открыть каталог</a>
-          </div>
+            <a class="button button-slide" href="catalog.html">Открыть каталог</a>
+          </div> -->
         </div>
         <!-- КОНЕЦ КАРУСЕЛИ -->
 
@@ -135,7 +137,7 @@
 
       <div class="header-goods">
         <h2 class="title-block">Популярные товары:</h2>
-        <a class="button" href="#">Все популярные товары</a>
+        <a class="button button-popular" href="#">Все популярные товары</a>
       </div>
 
       <ul class="card-product">
@@ -148,10 +150,10 @@
           <span class="old-price">32500 Р.</span>
           <span class="actual-price">25500 Р.</span>
           <!-- кнопки при наведении -->
-          <div class="prompting">
+          <!-- <div class="prompting">
             <a class="btn-buy" href="#">Купить</a>
             <a class="btn-basket" href="#">В закладки</a>
-          </div>
+          </div> -->
         </li>
 
         <li class="card">
@@ -162,10 +164,10 @@
           <span class="old-price">22500 Р.</span>
           <span class="actual-price">15500 Р.</span>
           <!-- кнопки при наведении -->
-          <div class="prompting">
+          <!-- <div class="prompting">
             <a class="btn-buy" href="#">Купить</a>
             <a class="btn-basket" href="#">В закладки</a>
-          </div>
+          </div> -->
         </li>
 
         <li class="card">
@@ -176,10 +178,10 @@
           <span class="old-price">30500 Р.</span>
           <span class="actual-price">25500 Р.</span>
           <!-- кнопки при наведении -->
-          <div class="prompting">
+          <!-- <div class="prompting">
             <a class="btn-buy" href="#">Купить</a>
             <a class="btn-basket" href="#">В закладки</a>
-          </div>
+          </div> -->
         </li>
 
         <li class="card">
@@ -189,10 +191,10 @@
             </a>
           <span class="actual-price">12500 Р.</span>
           <!-- кнопки при наведении -->
-          <div class="prompting">
+          <!-- <div class="prompting">
             <a class="btn-buy" href="#">Купить</a>
             <a class="btn-basket" href="#">В закладки</a>
-          </div>
+          </div> -->
         </li>
 
       </ul>
@@ -203,7 +205,7 @@
 
       <div class="header-manufacturers">
         <h2 class="title-block">Популярные производители:</h2>
-        <a class="button" href="#">Все производители</a>
+        <a class="button button-manufacturers" href="#">Все производители</a>
       </div>
 
       <ul class="cards-manufacturers">
@@ -267,36 +269,39 @@
         <p class="service-description">Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
 
         <!-- КАРУСЕЛЬ -->
-        <ul class="service-choice">
-          <li>
-            <a href="#" class="service-slide-btn">Доставка</a>
-          </li>
-          <li>
-            <a href="#" class="service-slide-btn">Гарантия</a>
-          </li>
-          <li>
-            <a href="#" class="service-slide-btn">Кредит</a>
-          </li>
-        </ul>
-        <!-- СЛАЙДЕР -->
-        <div class="service-slider">
-          <div class="service-delivery">
-            <h3 class="slider-title">Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-          </div>
+        <div class="carousel">
+          <ul class="service-choice">
+            <li>
+              <a href="#" class="service-slide-btn">Доставка</a>
+            </li>
+            <li>
+              <a href="#" class="service-slide-btn">Гарантия</a>
+            </li>
+            <li>
+              <a href="#" class="service-slide-btn">Кредит</a>
+            </li>
+          </ul>
+          <!-- СЛАЙДЕР -->
+          <div class="service-slider">
+            <div class="service-delivery">
+              <h3 class="slider-title">Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+            </div>
 
-          <div class="service-warranty">
-            <h3 class="slider-title">Гарантия</h3>
-            <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
-            <p>Дом уже восстановите как-нибудь сами.</p>
-          </div>
+            <!-- <div class="service-warranty">
+              <h3 class="slider-title">Гарантия</h3>
+              <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
+              <p>Дом уже восстановите как-нибудь сами.</p>
+            </div> -->
 
-          <div class="service-credit">
-            <h3 class="slider-title">Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-            <a class="button" href="#">Отправить заявку</a>
+            <!-- <div class="service-credit">
+              <h3 class="slider-title">Кредит</h3>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+              <a class="button" href="#">Отправить заявку</a>
+            </div> -->
           </div>
         </div>
+
       </div>
     </section>
 
