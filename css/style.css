@@ -125,6 +125,10 @@ body {
   left: 17px;
 }
 
+.icooon {
+  fill: green;
+}
+
 .goods-section {
   list-style: none;
   display: flex;
@@ -1026,11 +1030,15 @@ body {
   justify-content: space-between;
 }
 
-.service-slider {
+.service-slider,
+.service-warranty,
+.service-credit  {
   width: 620px;
 }
 
-.service-delivery p {
+.service-delivery p,
+.service-warranty p,
+.service-credit p {
   width: 260px;
   margin: 0;
 
@@ -1042,6 +1050,7 @@ body {
   color: #32425c;
   text-transform: uppercase;
   margin: 0;
+  margin-bottom: 24px;
 }
 
 .service-slider p {
