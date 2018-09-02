@@ -34,6 +34,17 @@ body {
   overflow: hidden;
 }
 
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #ee3643;
+  border-radius: 3px;
+}
+
 /**************** HEADER ****************/
 
 .page-header {
@@ -94,6 +105,7 @@ body {
 .basket:hover,
 .basket:focus {
   background-color: #212a3a;
+  fill: #ffffff;
 }
 
 .basket-in {
@@ -125,8 +137,11 @@ body {
   left: 17px;
 }
 
-.icooon {
-  fill: green;
+.icon-form {
+  width: 17px;
+  height: 17px;
+  outline: none;
+  fill: #6a7180;
 }
 
 .goods-section {
@@ -527,17 +542,6 @@ body {
   position: absolute;
   top: 61px;
   left: 24px;
-}
-
-.button {
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  background-color: #ee3643;
-  border-radius: 3px;
 }
 
 .button-slide {
@@ -959,6 +963,7 @@ body {
   background-color: #f4f8f9;
   min-height: 521px;
   border-top: 1px solid transparent;
+  margin-bottom: 82px;
 }
 
 .service-title {
@@ -1061,10 +1066,28 @@ body {
 
 /**************** ABOUT US ****************/
 
+.about-us {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company {
+  width: 540px;
+}
+
+.contacts {
+  width: 300px;
+}
+
 .title-about {
   font-size: 30px;
   line-height: 30px;
   color: #000000;
+  margin: 0;
+  margin-top: -3px;
+  margin-bottom: 27px;
+  letter-spacing: -1px;
+  padding: 0;
   text-transform: uppercase;
 }
 
@@ -1074,13 +1097,39 @@ body {
   line-height: 24px;
 }
 
+.company p:nth-of-type(2) {
+  width: 410px;
+  margin-top: 23px;
+  /* margin-bottom: 20px; */
+}
+
+.contacts p {
+  width: 195px;
+  margin-bottom: 30px;
+}
+
 .delivery-list {
   list-style: none;
+  padding-left: 36px;
+  margin-bottom: 41px;
 }
 
 .delivery-list li {
   font-size: 18px;
   line-height: 24px;
+  margin-top: 17px;
+}
+
+.delivery-btn {
+  padding: 10px 40px;
+}
+
+.contacts img {
+  margin-bottom: 39px;
+}
+
+.contacts-btn {
+  padding: 10px 61px;
 }
 
 /**************** ABOUT DRILL ****************/
@@ -1106,13 +1155,29 @@ body {
 
 /**************** FOOTER ****************/
 
+.main-footer {
+  margin-top: 93px;
+}
+
 .footer-top {
   background-color: #32425c;
+  min-height: 193px;
+}
+
+.footer-top-column {
+  display: flex;
+}
+
+.footer-contacts {
+  width: 380px;
+}
+
+.footer-navigation {
+  width: 560px;
 }
 
 .main-footer .logo {
-  padding: 19px 55px;
-
+  padding: 21px 41px;
   background-color: #ee3643;
   border-bottom: 5px solid #b52933;
 }
@@ -1120,13 +1185,26 @@ body {
 .footer-addres {
   font-size: 18px;
   line-height: 24px;
+  margin-top: 20px;
+  padding-left: 3px;
   color: #f1f5f7;
 }
 
 .footer-navigation ul {
   margin: 0;
-
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-navigation .footer-nav-company  {
+  margin-top: 25px;
+  padding: 12px;
+  width: 547px;
+}
+
+.footer-nav-company li {
+  min-width: 50px;
 }
 
 .footer-nav-company a {
@@ -1134,6 +1212,11 @@ body {
   line-height: 24px;
   color: #f1f5f7;
   text-decoration: none;
+}
+
+.footer-navigation .footer-nav-goods {
+  margin-top: 23px;
+  padding-left: 35px;
 }
 
 .footer-nav-goods a {
@@ -1165,17 +1248,30 @@ body {
 
 .footer-bottom {
   background-color: #293449;
+  min-height: 107px;
+}
+
+.footer-bottom-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 940px;
+  padding-top: 21px;
 }
 
 .footer-copyright {
   width: 230px;
   margin: 0;
-  padding: 20px;
+  /* padding: 20px; */
 
   font-size: 16px;
   line-height: 18px;
   text-align: left;
   color: #ffffff;
+}
+
+.footer-social {
+  margin-left: 94px;
 }
 
 .footer-social .btn-social {
@@ -1192,11 +1288,23 @@ body {
 
 .footer-feedback,
 .footer-developed {
-  width: 190px;
-
+  display: block;
+  text-align: left;
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
+
+}
+
+.footer-feedback {
+  box-sizing: border-box;
+  width: 150px;
+  padding-left: 28px;
+}
+
+.footer-developed {
+  box-sizing: border-box;
+  width: 110px;
 }
 
 .footer-feedback a,
@@ -1223,16 +1331,51 @@ body {
 
 .feedback-window {
   width: 620px;
-  height: 282px;
+  height: 430px;
   margin: 0 auto;
 
   border-top: 5px solid #ee3643;
 }
 
+.form-colunm {
+  display: flex;
+  justify-content: space-between;
+  width: 460px;
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+
 .feedback-item label {
+  display: block;
   font-size: 18px;
   line-height: 18px;
   color: #000000;
+  margin-bottom: 10px;
+}
+
+.feedback-center {
+  width: 460px;
+  margin: 0 auto;
+}
+
+.form-feedback input {
+  width: 220px;
+  height: 38px;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.form-feedback input::placeholder,
+.form-feedback textarea::placeholder {
+  color: #a9a9a9;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.form-feedback textarea {
+  padding-left: 10px;
+  padding-top: 5px;
 }
 
 .form-feedback input,
@@ -1254,9 +1397,18 @@ body {
 
 .feedback-bottom {
   background-color: #f4f4f4;
+  height: 112px;
+  margin-top: 37px;
+  position: relative;
 }
 
 .button-feedback {
+  width: 460px;
+  margin: 0 auto;
+  position: absolute;
+  top: 35px;
+  left: 80px;
+  padding: 10px 10px;
   border: none;
 }
 
@@ -1266,7 +1418,7 @@ body {
   width: 940px;
   height: 446px;
   margin: 0 auto;
-
+  margin-top: 40px;    /*Временно*/
   box-shadow: 0 0 16px 0 #000000;
 }
 
