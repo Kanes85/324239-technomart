@@ -17,7 +17,8 @@ body {
   background-color: #ffffff;;
 }
 
-.conteiner { /*центровка*/
+.conteiner {
+  /*центровка*/
   width: 940px;
   margin: 0 auto;
 }
@@ -25,39 +26,47 @@ body {
 /*Прячет элементы с классом visually-hidden*/
 .visually-hidden {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  clip: rect(0 0 0 0);
   overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
 }
 
+/*Общие параметры кнопок*/
 .button {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  cursor: pointer;
+
   background-color: #ee3643;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 /**************** HEADER ****************/
 
 .page-header {
-  color: #000000;
   min-height: 320px;
   margin-bottom: 59px;
+
+  color: #000000;
+
   background-color: #f3f7f8;
 }
 
 .page-header-top {
   height: 42px;
-  background-color: #293449;
   margin-bottom: 46px;
+
+  background-color: #293449;
 }
 
 .page-header-top .conteiner {
@@ -101,15 +110,15 @@ body {
 
 .search-form .form-search:hover,
 .bookmarks:hover,
-.bookmarks:focus,
-.basket:hover,
-.basket:focus {
+.basket:hover {
   background-color: #212a3a;
-  fill: #ffffff;
 }
 
 .basket-in {
   background-color: #ee3643;
+}
+.basket-in:hover {
+  background-color: #d54751;
 }
 
 .search-form .form-search:focus {
@@ -129,56 +138,63 @@ body {
 }
 
 .search-form .icon-search {
-  background-color: transparent;
-  border: none;
-  padding: 0;
   position: absolute;
   top: 12px;
   left: 17px;
+
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
 }
 
 .icon-form {
   width: 17px;
   height: 17px;
+
   outline: none;
+
   fill: #6a7180;
 }
 
 .goods-section {
-  list-style: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 450px;
   height: 42px;
-  padding: 0;
   margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .goods-section li {
   width: 150px;
-  text-align: center;
   padding: 0;
+
+  text-align: center;
 }
 
 .goods-section a {
   display: block;
+  padding: 12px;
+
   font-size: 17px;
   line-height: 18px;
+  text-align: center;
   color: #ffffff;
   text-decoration: none;
-  text-align: center;
-  padding: 12px;
 }
 
 .goods-section .bookmarks {
-  padding-left: 25px;
   padding-right: 10px;
+  padding-left: 25px;
 }
 
 .goods-section .basket {
-  padding-left: 30px;
   padding-right: 10px;
+  padding-left: 30px;
 }
 
 .bookmarks:active,
@@ -188,12 +204,15 @@ body {
   background-color: #161d29;
 }
 
+.basket-in:active {
+  background-color: #dc2935;
+}
+
 .ordering {
   background-color: #63a63e;
 }
 
-.ordering:hover,
-.ordering:focus {
+.ordering:hover {
   background-color: #5fbb2d;
 }
 
@@ -207,8 +226,8 @@ body {
 
 .header-info {
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 40px;
 }
 
@@ -221,6 +240,7 @@ body {
   margin: 0;
   padding-top: 3px;
   padding-left: 52px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 23px;
@@ -229,18 +249,18 @@ body {
 }
 
 .header-contacts {
-  padding-left: 10px;
   width: 313px;
+  padding-left: 10px;
 }
 
 .header-info-phone {
   display: inline-block;
-  padding-top: 9px;
-  padding-bottom: 9px;
-  padding-left: 71px;
-  padding-right: 50px;
   margin: 0;
   margin-bottom: 4px;
+  padding-top: 10px;
+  padding-right: 50px;
+  padding-bottom: 9px;
+  padding-left: 71px;
 
   font-size: 21px;
   line-height: 21px;
@@ -251,10 +271,11 @@ body {
 }
 
 .header-info-address {
-  font-size: 14px;
-  color: #32425c;
   margin: 0;
   padding-left: 9px;
+
+  font-size: 14px;
+  color: #32425c;
 }
 
 /* ВХОД и РЕГИСТРАЦИЯ */
@@ -271,21 +292,22 @@ body {
   line-height: 21px;
   color: #000000;
   text-decoration: none;
+
   background-color: #ffffff;
   border: none;
 }
 
 .enter {
-  padding: 10px;
-  padding-left: 47px;
-  padding-right: 26px;
   margin-right: 8px;
+  padding: 10px;
+  padding-right: 26px;
+  padding-left: 47px;
 }
 
 .registration {
   padding: 10px;
-  padding-left: 22px;
   padding-right: 25px;
+  padding-left: 22px;
 }
 
 .header-btn:hover,
@@ -298,11 +320,22 @@ body {
 }
 
 /* ЛИЧНЫЙ КАБИНЕТ */
+
+.header-user {
+  width: 299px;
+  margin-top: 12px;
+  margin-left: 14px;
+}
+
 .header-user a {
   text-decoration: none;
 }
 
 .header-user .user-name {
+  box-sizing: border-box;
+  padding: 10px;
+  padding-left: 43px;
+  padding-right: 68px;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -316,11 +349,17 @@ body {
 
 .header-user .my-order,
 .header-user .personal-area {
+  display: inline-block;
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
-
+  margin-top: 15px;
   border-bottom: 1px solid #32425c;
+}
+
+.my-order {
+  margin-right: 30px;
+  margin-left: 14px;
 }
 
 .header-user .my-order:hover,
@@ -340,23 +379,19 @@ body {
 
 /* МЕНЮ НАВИГАЦИИ */
 
-
 .main-menu .navigation {
-  width: 940px;
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
-
-  padding-left: 0;
+  width: 940px;
   margin: 0;
+  padding-left: 0;
 
   list-style: none;
 }
 
 .navigation li {
-  min-width: 127px;
-  /* flex-grow: 1; */
   flex-shrink: 0;
+  min-width: 127px;
 }
 
 .navigation li:nth-child(5) {
@@ -365,12 +400,14 @@ body {
 
 .main-menu .main-nav {
   display: block;
+  padding: 19px;
+
   font-size: 17px;
   line-height: 17px;
-  color: #ffffff;
   text-align: center;
+  color: #ffffff;
   text-decoration: none;
-  padding: 19px;
+
   background-color: #32425c;
   border-bottom: 5px solid #293449;
 }
@@ -390,13 +427,16 @@ body {
 .breadcrumbs {
   display: flex;
   align-items: baseline;
-
+  padding: 0;
+  margin: 0;
+  margin-top: -41px;
   list-style: none;
 }
 
 .breadcrumbs-way,
 .breadcrumbs-current {
-  margin-right: 15px;
+  margin-right: 44px;
+  font-family: "PT Sans", Arial, sans-serif;
 
   font-size: 13px;
   line-height: 18px;
@@ -417,20 +457,21 @@ body {
 }
 
 .promo-card {
-  width: 940px;
   display: flex;
   justify-content: space-between;
-  padding: 0;
+  width: 940px;
   margin: 0;
   margin-bottom: 20px;
+  padding: 0;
 }
 
 .promo-data,
 .promo-bid {
+  position: relative;
+
   box-sizing: border-box;
   width: 300px;
   height: 123px;
-  position: relative;
 }
 
 .color-orange {
@@ -454,35 +495,39 @@ body {
 }
 
 .promo-title {
+  position: absolute;
+  top: 21px;
+  left: 22px;
+
+  margin: 0;
+
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
-  position: absolute;
-  margin: 0;
-  left: 22px;
-  top: 21px;
 }
 
 .promo-btn {
-  display: block;
-  box-sizing: border-box;
-  width: 135px;
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  margin: 0;
-  border-radius: 3px;
   position: absolute;
   top: 63px;
   left: 25px;
+
+  display: block;
+  box-sizing: border-box;
+  width: 135px;
+  margin: 0;
   padding-top: 10px;
   padding-bottom: 10px;
 
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
   background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
 }
 
 .color-purple .promo-btn {
@@ -510,8 +555,8 @@ body {
 }
 
 .promo-proposals {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 .color-green {
@@ -523,31 +568,36 @@ body {
 }
 
 .promo-slider .promo-name {
+  position: absolute;
+  top: 23px;
+  left: 23px;
+
+  margin: 0;
+
   font-weight: bold;
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
   text-transform: uppercase;
-  position: absolute;
-  top: 23px;
-  left: 23px;
-  margin: 0;
 }
 
 .promo-slider .promo-description {
-  font-size: 18px;
-  line-height: 24px;
-  color: #ffffff;
-  margin: 0;
   position: absolute;
   top: 61px;
   left: 24px;
+
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
 }
 
 .button-slide {
   position: absolute;
   bottom: 30px;
   left: 25px;
+
   padding: 10px 48px;
 }
 
@@ -566,25 +616,62 @@ body {
   line-height: 30px;
   color: #32425c;
   text-transform: uppercase;
-
+  padding: 29px;
   background-color: #f2f6f8;
+  margin-top: 18px;
+  margin-bottom: 21px;
+  letter-spacing: -0.5px;
+  font-weight: 400;
+}
+
+/* Сетка из фильтра и карточек товара */
+.goods-column {
+  display: flex;
+  justify-content: space-between;
+  width: 940px;
+}
+
+.filter {
+  width: 220px;
+}
+
+.filter-goods {
+  width: 700px;
 }
 
 /**************** FILTER BLOCK ****************/
 
 .filter-block {
+  box-sizing: border-box;
+  width: 220px;
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
-
+  padding: 10px;
+  padding-left: 19px;
   background-color: #f7f3ec;
+  border-radius: 3px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.filter-border {
+  color: #e5e5e5;
+  margin-top: 3px;
+  margin-bottom: 16px;
+}
+
+.filter-border-time {  /*временно*/
+  margin-top: 45px;
 }
 
 .filter fieldset {
   border: none;
+  padding: 0;
+  margin: 0;
 }
 
 .filter legend {
@@ -594,6 +681,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
+
 }
 
 .filter input[type="range"] {
@@ -616,6 +704,12 @@ body {
 .manufacturer-filter .filter-row,
 .power-filter .filter-row {
   list-style: none;
+  padding-left: 34px;
+}
+
+.manufacturer-filter .filter-item,
+.power-filter .filter-item {
+  margin-bottom: 16px;
 }
 
 .manufacturer-filter label,
@@ -628,8 +722,14 @@ body {
   text-transform: uppercase;
 }
 
+.filter-manufacturers .power-filter {
+  margin-bottom: 59px;
+}
+
 .filter-manufacturers .btn-filter {
-  padding: 10px 40px;
+  padding: 9px;
+  padding-left: 38px;
+  padding-right: 39px;
 
   font-weight: 400;
   font-size: 13px;
@@ -637,25 +737,32 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
-
+  cursor: pointer;
   background-color: transparent;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
 }
 
-/* .filter-manufacturers .btn-filter:hover {
+.filter-manufacturers .btn-filter:hover {
   outline: none;
   border-color: #bdc6ca;
-} */
+}
 
-/* .filter-manufacturers .btn-filter:active {
+.filter-manufacturers .btn-filter:active {
   border-color: #ee3643;
-} */
+}
 
 /**************** SORTING ****************/
 
 .filter-goods .sort {
   background-color: #f7f3ec;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+  border-radius: 3px;
+
 }
 
 .filter-sort {
@@ -665,36 +772,86 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 19px;
+  margin-right: 100px;
 }
 
 .filter-goods .sorting,
 .filter-goods .sorting-btn {
   list-style: none;
+  display: flex;
+  align-items: baseline;
+  margin: 0;
 }
 
-.sorting-item a {
-  text-decoration: none;
-
-  border-bottom: 1px dotted #ee3643;
+.sorting li {
+  width: 130px;
 }
 
-.sorting-item a {
+.sorting a {
+  display: inline;
   font-weight: 400;
   font-size: 13px;
   font-family: "PT Sans", Arial, sans-serif;
   color: rgba(0, 0, 0, 0.3);
   text-transform: uppercase;
+  text-decoration: none;
+
+  border-bottom: 1px dotted #ee3643;
 }
 
-.sorting-item a:hover {
+.sorting .sorting-item:first-child {
+  margin-right: -7px;
+}
+
+.choice-filter:hover {
   color: #000000;
 
   border-bottom-style: solid;
 }
 
+/* .choice-filter:focus {
+  color: #ee3643;
+
+  border: none;
+  cursor: default;
+} */
+
 .sorting-btn .choice-filter {
   border: none;
+  font-size: 0;
+  margin-left: -23px;
 }
+
+.btn-up svg,
+.btn-down svg {
+  width: 11px;
+  height: 10px;
+  fill: #c5c5c5;
+  cursor: pointer;
+}
+
+.btn-up svg {
+  margin-right: 20px;
+}
+
+.btn-up:hover svg,
+.btn-down:hover svg {
+  fill: #231f20;
+}
+
+/* .btn-up:focus svg,
+.btn-down:focus svg {
+  fill: #ee3643;
+} */
+
+.sort-active svg,
+.sort-active:hover svg {
+  fill: #ee3643;
+}
+
 
 .sorting-btn .choice-filter:hover {
   color: #000000;
@@ -720,18 +877,21 @@ body {
 .header-goods,
 .header-manufacturers {
   position: relative;
+
   margin-bottom: 21px;
 }
 
 .popular-goods .title-block,
 .manufacturers .title-block {
+  margin: 0;
+
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
   text-transform: uppercase;
+
   background-color: #f9f5f0;
-  margin: 0;
 }
 
 .popular-goods .title-block {
@@ -750,6 +910,7 @@ body {
   position: absolute;
   top: 25px;
   right: 24px;
+
   padding: 10px 55px;
 }
 
@@ -757,6 +918,7 @@ body {
   position: absolute;
   top: 23px;
   right: 25px;
+
   padding: 10px 68px;
 }
 
@@ -768,18 +930,20 @@ body {
 }
 
 .card-product {
-  width: 940px;
   display: flex;
   justify-content: space-between;
-  padding: 0;
+  width: 940px;
   margin: 0;
   margin-bottom: 14px;
+  padding: 0;
 }
 
 .card {
+  position: relative;
+
   box-sizing: border-box;
   min-width: 220px;
-  position: relative;
+
   font-weight: bold;
   font-family: "PT Sans", Arial, sans-serif;
 }
@@ -799,6 +963,7 @@ body {
   position: absolute;
   bottom: 107px;
   left: 29px;
+
   display: inline-block;
   width: 160px;
 
@@ -809,26 +974,32 @@ body {
   text-decoration: none;
 }
 
-.old-price { /*Старая цена*/
+.old-price {
+  position: absolute;
+  bottom: 77px;
+  left: 78px;
+  /*Старая цена*/
+
   font-size: 17px;
   line-height: 18px;
   color: #a9a9a9;
   text-decoration: line-through;
-  position: absolute;
-  bottom: 77px;
-  left: 78px;
 }
 
-.actual-price { /*Актуальная цена*/
-  font-size: 17px;
-  line-height: 18px;
-  color: #ffffff;
+.actual-price {
   position: absolute;
   bottom: 30px;
   left: 44px;
-  border-radius: 3px;
-  background-color: #ee3643;
+
   padding: 10px 35px;
+  /*Актуальная цена*/
+
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+
+  background-color: #ee3643;
+  border-radius: 3px;
 }
 
 .prompting a {
@@ -876,6 +1047,17 @@ body {
   border-color: rgba(50, 66, 92, 0.3);
 }
 
+/* Сетка в каталоге */
+.product-column {
+  display: flex;
+  width: 700px;
+  flex-wrap: wrap;
+}
+
+.product-column .card {
+  margin-bottom: 12px;
+}
+
 /* КАРТОЧКИ ПРОИЗВОДИТЕЛЕЙ */
 
 .manufacturers {
@@ -913,7 +1095,10 @@ body {
 .toggle {
   display: flex;
   align-items: baseline;
-
+  padding: 0;
+  margin: 0;
+  margin-top: 28px;
+  margin-bottom: 34px;
   list-style: none;
 }
 
@@ -960,40 +1145,44 @@ body {
 /**************** SERVISE ****************/
 
 .service {
-  background-color: #f4f8f9;
   min-height: 521px;
-  border-top: 1px solid transparent;
   margin-bottom: 82px;
+
+  background-color: #f4f8f9;
+  border-top: 1px solid transparent;
 }
 
 .service-title {
+  margin: 0;
+  margin-top: 64px;
+  margin-bottom: 27px;
+
   font-size: 30px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
-  margin: 0;
   letter-spacing: -1px;
-  margin-top: 64px;
-  margin-bottom: 27px;
 }
 
 .service-description {
   width: 400px;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 24px;
-  color: #000000;
   margin: 0;
   margin-bottom: 68px;
+
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", Arial, sans-serif;
+  color: #000000;
 }
 
 .service-choice {
-  list-style: none;
   display: flex;
   flex-direction: column;
+  width: 240px;
   margin: 0;
   padding: 0;
-  width: 240px;
+
+  list-style: none;
 }
 
 .service-choice li {
@@ -1002,16 +1191,17 @@ body {
 }
 
 .service-choice a {
-  width: 240px;
-  box-sizing: border-box;
   display: block;
+  box-sizing: border-box;
+  width: 240px;
+  padding-top: 12px;
+  padding-bottom: 17px;
+  padding-left: 22px;
+
   font-size: 21px;
   line-height: 30px;
   color: #ffffff;
   text-decoration: none;
-  padding-left: 22px;
-  padding-top: 12px;
-  padding-bottom: 17px;
 
   background-color: #32425c;
   border-top: 1px solid #4d637b;
@@ -1024,20 +1214,20 @@ body {
 
 .service-choice a:focus {
   color: #32425c;
-  border-color: #ffffff;
 
   background-color: #ffffff;
+  border-color: #ffffff;
 }
 
 .carousel {
-  width: 940px;
   display: flex;
   justify-content: space-between;
+  width: 940px;
 }
 
 .service-slider,
 .service-warranty,
-.service-credit  {
+.service-credit {
   width: 620px;
 }
 
@@ -1046,16 +1236,16 @@ body {
 .service-credit p {
   width: 260px;
   margin: 0;
-
 }
 
 .slider-title {
+  margin: 0;
+  margin-bottom: 24px;
+
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
   text-transform: uppercase;
-  margin: 0;
-  margin-bottom: 24px;
 }
 
 .service-slider p {
@@ -1080,15 +1270,16 @@ body {
 }
 
 .title-about {
-  font-size: 30px;
-  line-height: 30px;
-  color: #000000;
   margin: 0;
   margin-top: -3px;
   margin-bottom: 27px;
-  letter-spacing: -1px;
   padding: 0;
+
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
   text-transform: uppercase;
+  letter-spacing: -1px;
 }
 
 .company p,
@@ -1109,15 +1300,17 @@ body {
 }
 
 .delivery-list {
-  list-style: none;
-  padding-left: 36px;
   margin-bottom: 41px;
+  padding-left: 36px;
+
+  list-style: none;
 }
 
 .delivery-list li {
+  margin-top: 17px;
+
   font-size: 18px;
   line-height: 24px;
-  margin-top: 17px;
 }
 
 .delivery-btn {
@@ -1160,8 +1353,9 @@ body {
 }
 
 .footer-top {
-  background-color: #32425c;
   min-height: 193px;
+
+  background-color: #32425c;
 }
 
 .footer-top-column {
@@ -1178,29 +1372,32 @@ body {
 
 .main-footer .logo {
   padding: 21px 41px;
+
   background-color: #ee3643;
   border-bottom: 5px solid #b52933;
 }
 
 .footer-addres {
-  font-size: 18px;
-  line-height: 24px;
   margin-top: 20px;
   padding-left: 3px;
+
+  font-size: 18px;
+  line-height: 24px;
   color: #f1f5f7;
 }
 
 .footer-navigation ul {
-  margin: 0;
-  list-style: none;
   display: flex;
   justify-content: space-between;
+  margin: 0;
+
+  list-style: none;
 }
 
-.footer-navigation .footer-nav-company  {
+.footer-navigation .footer-nav-company {
+  width: 547px;
   margin-top: 25px;
   padding: 12px;
-  width: 547px;
 }
 
 .footer-nav-company li {
@@ -1247,8 +1444,9 @@ body {
 }
 
 .footer-bottom {
-  background-color: #293449;
   min-height: 107px;
+
+  background-color: #293449;
 }
 
 .footer-bottom-column {
@@ -1289,11 +1487,11 @@ body {
 .footer-feedback,
 .footer-developed {
   display: block;
-  text-align: left;
+
   font-size: 16px;
   line-height: 18px;
+  text-align: left;
   color: #ffffff;
-
 }
 
 .footer-feedback {
@@ -1348,10 +1546,11 @@ body {
 
 .feedback-item label {
   display: block;
+  margin-bottom: 10px;
+
   font-size: 18px;
   line-height: 18px;
   color: #000000;
-  margin-bottom: 10px;
 }
 
 .feedback-center {
@@ -1360,22 +1559,22 @@ body {
 }
 
 .form-feedback input {
+  box-sizing: border-box;
   width: 220px;
   height: 38px;
-  box-sizing: border-box;
   padding-left: 10px;
 }
 
 .form-feedback input::placeholder,
 .form-feedback textarea::placeholder {
-  color: #a9a9a9;
   font-size: 13px;
   line-height: 18px;
+  color: #a9a9a9;
 }
 
 .form-feedback textarea {
-  padding-left: 10px;
   padding-top: 5px;
+  padding-left: 10px;
 }
 
 .form-feedback input,
@@ -1396,19 +1595,23 @@ body {
 }
 
 .feedback-bottom {
-  background-color: #f4f4f4;
+  position: relative;
+
   height: 112px;
   margin-top: 37px;
-  position: relative;
+
+  background-color: #f4f4f4;
 }
 
 .button-feedback {
-  width: 460px;
-  margin: 0 auto;
   position: absolute;
   top: 35px;
   left: 80px;
+
+  width: 460px;
+  margin: 0 auto;
   padding: 10px 10px;
+
   border: none;
 }
 
@@ -1419,6 +1622,7 @@ body {
   height: 446px;
   margin: 0 auto;
   margin-top: 40px;    /*Временно*/
+
   box-shadow: 0 0 16px 0 #000000;
 }
 
