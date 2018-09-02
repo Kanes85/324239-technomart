@@ -228,7 +228,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 40px;
+  margin-bottom: 39px;
 }
 
 .slogan {
@@ -1097,8 +1097,8 @@ body {
   align-items: baseline;
   padding: 0;
   margin: 0;
-  margin-top: 28px;
-  margin-bottom: 34px;
+  margin-top: 30px;
+  margin-bottom: 59px;
   list-style: none;
 }
 
@@ -1328,7 +1328,12 @@ body {
 /**************** ABOUT DRILL ****************/
 
 .drill-presses {
+  height: 304px;
   background-color: #f2f6f8;
+  border-top: 1px solid transparent;
+  box-sizing: border-box;
+
+  /* background-color: lightgrey; */
 }
 
 .about-drill {
@@ -1337,6 +1342,7 @@ body {
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+  margin-top: 64px;
 }
 
 .drill-presses p {
@@ -1349,7 +1355,12 @@ body {
 /**************** FOOTER ****************/
 
 .main-footer {
+  border-top: 1px solid transparent;
   margin-top: 93px;
+}
+
+.main-footer-catalog {
+  margin-top: -44px;
 }
 
 .footer-top {
@@ -1636,30 +1647,67 @@ body {
   border-top: 5px solid #ee3643;
 }
 
+.add-goods-center {
+  width: 460px;
+  margin: 0 auto;
+}
+
 .add-goods {
   font-size: 30px;
   line-height: 30px;
+
+}
+
+.top-add-goods {
+  height: 170px;
+  box-sizing: border-box;
+  padding-top: 70px;
+  padding-left: 115px;
 }
 
 .bottom-add-goods {
   background-color: #f1f1f1;
+  height: 112px;
+  border-top: 1px solid transparent;
+}
+
+.add-goods-column {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 56px;
 }
 
 .bottom-add-goods a {
+  width: 220px;
+  text-align: center;
+
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   text-decoration: none;
+  border-radius: 3px;
 }
 
 .btn-place-order {
   color: #ffffff;
-
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #ee3643;
 }
 
 .btn-continue {
   color: #000000;
-
+  padding-top: 10px;
+  padding-bottom: 10px;
   background-color: #ffffff;
 }
+
+/* .btn-continue:hover {
+  color: #ffffff;
+  background-color: #bdc6ca;
+}
+
+.btn-continue:active {
+  color: #ffffff;
+  background-color: #ee3643;
+} */
