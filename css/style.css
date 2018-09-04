@@ -62,6 +62,14 @@ body {
   background-color: #f3f7f8;
 }
 
+.page-header-catalog {
+  min-height: 320px;
+
+  color: #000000;
+
+  background-color: #f3f7f8;
+}
+
 .page-header-top {
   height: 42px;
   margin-bottom: 46px;
@@ -334,8 +342,9 @@ body {
 .header-user .user-name {
   box-sizing: border-box;
   padding: 10px;
-  padding-left: 43px;
   padding-right: 68px;
+  padding-left: 43px;
+
   font-size: 21px;
   line-height: 21px;
   color: #000000;
@@ -350,10 +359,12 @@ body {
 .header-user .my-order,
 .header-user .personal-area {
   display: inline-block;
+  margin-top: 15px;
+
   font-size: 16px;
   line-height: 18px;
   color: #32425c;
-  margin-top: 15px;
+
   border-bottom: 1px solid #32425c;
 }
 
@@ -382,6 +393,7 @@ body {
 .main-menu .navigation {
   display: flex;
   justify-content: space-between;
+  align-content: stretch;
   width: 940px;
   margin: 0;
   padding-left: 0;
@@ -390,12 +402,9 @@ body {
 }
 
 .navigation li {
+  flex-grow: 1;
   flex-shrink: 0;
   min-width: 127px;
-}
-
-.navigation li:nth-child(5) {
-  flex-grow: 1;
 }
 
 .main-menu .main-nav {
@@ -427,19 +436,20 @@ body {
 .breadcrumbs {
   display: flex;
   align-items: baseline;
-  padding: 0;
   margin: 0;
-  margin-top: -41px;
+  margin-top: 18px;
+  padding: 0;
+
   list-style: none;
 }
 
 .breadcrumbs-way,
 .breadcrumbs-current {
   margin-right: 44px;
-  font-family: "PT Sans", Arial, sans-serif;
 
   font-size: 13px;
   line-height: 18px;
+  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
@@ -612,16 +622,18 @@ body {
 /**************** BLOCK GOODS ****************/
 
 .perforator-block {
+  margin-top: 18px;
+  margin-bottom: 21px;
+  padding: 29px;
+  
+  font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   color: #32425c;
   text-transform: uppercase;
-  padding: 29px;
-  background-color: #f2f6f8;
-  margin-top: 18px;
-  margin-bottom: 21px;
   letter-spacing: -0.5px;
-  font-weight: 400;
+
+  background-color: #f2f6f8;
 }
 
 /* Сетка из фильтра и карточек товара */
@@ -644,44 +656,48 @@ body {
 .filter-block {
   box-sizing: border-box;
   width: 220px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 10px;
+  padding-left: 19px;
+
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
-  padding: 10px;
-  padding-left: 19px;
+
   background-color: #f7f3ec;
   border-radius: 3px;
-  margin: 0;
-  margin-bottom: 10px;
 }
 
 .filter-border {
-  color: #e5e5e5;
   margin-top: 3px;
   margin-bottom: 16px;
+
+  color: #e5e5e5;
 }
 
-.filter-border-time {  /*временно*/
+.filter-border-time {
+  /*временно*/
   margin-top: 45px;
 }
 
 .filter fieldset {
-  border: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  font-family: "PT Sans", Arial, sans-serif;
+
+  border: none;
 }
 
 .filter legend {
   font-weight: bold;
   font-size: 17px;
   line-height: 30px;
-  font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
-
 }
 
 .filter input[type="range"] {
@@ -703,8 +719,9 @@ body {
 
 .manufacturer-filter .filter-row,
 .power-filter .filter-row {
-  list-style: none;
   padding-left: 34px;
+
+  list-style: none;
 }
 
 .manufacturer-filter .filter-item,
@@ -728,8 +745,8 @@ body {
 
 .filter-manufacturers .btn-filter {
   padding: 9px;
-  padding-left: 38px;
   padding-right: 39px;
+  padding-left: 38px;
 
   font-weight: 400;
   font-size: 13px;
@@ -737,15 +754,16 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
-  cursor: pointer;
+
   background-color: transparent;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .filter-manufacturers .btn-filter:hover {
-  outline: none;
   border-color: #bdc6ca;
+  outline: none;
 }
 
 .filter-manufacturers .btn-filter:active {
@@ -755,35 +773,36 @@ body {
 /**************** SORTING ****************/
 
 .filter-goods .sort {
-  background-color: #f7f3ec;
   display: flex;
-  align-items: baseline;
   justify-content: space-between;
-
+  align-items: baseline;
   margin-bottom: 20px;
-  border-radius: 3px;
 
+  background-color: #f7f3ec;
+  border-radius: 3px;
 }
 
 .filter-sort {
+  margin-right: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 19px;
+
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
   font-family: "PT Sans", Arial, sans-serif;
   color: #000000;
   text-transform: uppercase;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 19px;
-  margin-right: 100px;
 }
 
 .filter-goods .sorting,
 .filter-goods .sorting-btn {
-  list-style: none;
   display: flex;
   align-items: baseline;
   margin: 0;
+
+  list-style: none;
 }
 
 .sorting li {
@@ -792,6 +811,7 @@ body {
 
 .sorting a {
   display: inline;
+
   font-weight: 400;
   font-size: 13px;
   font-family: "PT Sans", Arial, sans-serif;
@@ -820,17 +840,21 @@ body {
 } */
 
 .sorting-btn .choice-filter {
-  border: none;
-  font-size: 0;
   margin-left: -23px;
+
+  font-size: 0;
+
+  border: none;
 }
 
 .btn-up svg,
 .btn-down svg {
   width: 11px;
   height: 10px;
-  fill: #c5c5c5;
+
   cursor: pointer;
+
+  fill: #c5c5c5;
 }
 
 .btn-up svg {
@@ -974,11 +998,12 @@ body {
   text-decoration: none;
 }
 
-.old-price {
+
+
+.old-price {     /*Старая цена*/
   position: absolute;
   bottom: 77px;
   left: 78px;
-  /*Старая цена*/
 
   font-size: 17px;
   line-height: 18px;
@@ -986,13 +1011,12 @@ body {
   text-decoration: line-through;
 }
 
-.actual-price {
+.actual-price {      /*Актуальная цена*/
   position: absolute;
   bottom: 30px;
   left: 44px;
 
   padding: 10px 35px;
-  /*Актуальная цена*/
 
   font-size: 17px;
   line-height: 18px;
@@ -1050,8 +1074,8 @@ body {
 /* Сетка в каталоге */
 .product-column {
   display: flex;
-  width: 700px;
   flex-wrap: wrap;
+  width: 700px;
 }
 
 .product-column .card {
@@ -1095,10 +1119,11 @@ body {
 .toggle {
   display: flex;
   align-items: baseline;
-  padding: 0;
   margin: 0;
   margin-top: 30px;
   margin-bottom: 59px;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -1225,15 +1250,11 @@ body {
   width: 940px;
 }
 
-.service-slider,
-.service-warranty,
-.service-credit {
+.service-slider-card {
   width: 620px;
 }
 
-.service-delivery p,
-.service-warranty p,
-.service-credit p {
+.service-slider-card p {
   width: 260px;
   margin: 0;
 }
@@ -1288,10 +1309,8 @@ body {
   line-height: 24px;
 }
 
-.company p:nth-of-type(2) {
-  width: 410px;
+.company p {
   margin-top: 23px;
-  /* margin-bottom: 20px; */
 }
 
 .contacts p {
@@ -1328,21 +1347,21 @@ body {
 /**************** ABOUT DRILL ****************/
 
 .drill-presses {
+  box-sizing: border-box;
   height: 304px;
+
   background-color: #f2f6f8;
   border-top: 1px solid transparent;
-  box-sizing: border-box;
-
-  /* background-color: lightgrey; */
 }
 
 .about-drill {
+  margin-top: 64px;
+
   font-weight: 400;
   font-size: 30px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
-  margin-top: 64px;
 }
 
 .drill-presses p {
@@ -1355,12 +1374,13 @@ body {
 /**************** FOOTER ****************/
 
 .main-footer {
-  border-top: 1px solid transparent;
   margin-top: 93px;
+
+  border-top: 1px solid transparent;
 }
 
 .main-footer-catalog {
-  margin-top: -44px;
+  margin-top: 0;
 }
 
 .footer-top {
@@ -1471,7 +1491,6 @@ body {
 .footer-copyright {
   width: 230px;
   margin: 0;
-  /* padding: 20px; */
 
   font-size: 16px;
   line-height: 18px;
@@ -1655,19 +1674,19 @@ body {
 .add-goods {
   font-size: 30px;
   line-height: 30px;
-
 }
 
 .top-add-goods {
-  height: 170px;
   box-sizing: border-box;
+  height: 170px;
   padding-top: 70px;
   padding-left: 115px;
 }
 
 .bottom-add-goods {
-  background-color: #f1f1f1;
   height: 112px;
+
+  background-color: #f1f1f1;
   border-top: 1px solid transparent;
 }
 
@@ -1679,26 +1698,31 @@ body {
 
 .bottom-add-goods a {
   width: 220px;
-  text-align: center;
 
   font-size: 14px;
   line-height: 18px;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
+
   border-radius: 3px;
 }
 
 .btn-place-order {
-  color: #ffffff;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  color: #ffffff;
+
   background-color: #ee3643;
 }
 
 .btn-continue {
-  color: #000000;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  color: #000000;
+
   background-color: #ffffff;
 }
 
