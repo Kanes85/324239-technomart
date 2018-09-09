@@ -1,6 +1,6 @@
 
 body {
-  min-width: 1200px;
+  min-width: 960px;
   margin: 0;
   padding: 0;
 
@@ -41,6 +41,8 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
+
+  padding: 10px 30px;
 
   background-color: #ee3643;
   border-radius: 3px;
@@ -240,7 +242,7 @@ body {
 }
 
 .header-slogan {
-  width: 215px;
+  width: 200px;
   margin: 0;
   padding-top: 3px;
   padding-left: 52px;
@@ -960,47 +962,47 @@ body {
 
 .card {
   position: relative;
-
-  box-sizing: border-box;
-  min-width: 220px;
+  display: inline-block;
+  text-align: center;
+  width: 218px;
+  margin-bottom: 20px;
 
   font-weight: bold;
   font-family: "PT Sans", Arial, sans-serif;
+  border: 1px solid #eaeaea;
 }
 
-.card img {
-  outline: 1px solid #eaeaea;
-}
-
-.card:hover img,
-.card:focus img {
-  outline: none;
+.card:hover,
+.card:focus {
+  border: none;
   box-shadow: 0 10px 30px 0 rgba(41, 52, 73, 0.5),
   0 9px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
-.card .name-goods {
-  position: absolute;
-  bottom: 107px;
-  left: 29px;
+.card img {
+  width: 218px;
+  height: 168px;
+}
 
+.card .name-goods {
   display: inline-block;
   width: 160px;
+  min-height: 40px;
+  padding: 0 25px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+
 
   font-size: 18px;
   line-height: 20px;
-  text-align: center;
+
   color: #000000;
   text-decoration: none;
 }
 
-
-
 .old-price {     /*Старая цена*/
-  position: absolute;
-  bottom: 77px;
-  left: 78px;
-
+  display: inline-block;
+  min-height: 20px;
   font-size: 17px;
   line-height: 18px;
   color: #a9a9a9;
@@ -1008,11 +1010,13 @@ body {
 }
 
 .actual-price {      /*Актуальная цена*/
-  position: absolute;
-  bottom: 30px;
-  left: 44px;
-
-  padding: 10px 35px;
+  display: block;
+  position: relative;
+  width: 80px;
+  margin-left: 41px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  padding: 10px 30px;
 
   font-size: 17px;
   line-height: 18px;
@@ -1022,9 +1026,37 @@ body {
   border-radius: 3px;
 }
 
+.actual-price::after {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -23px;
+  width: 0;
+  height: 0;
+  border: 20px solid white;
+  border-left-color: #ee3643;
+}
+
+.new {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  width: 60px;
+  height: 60px;
+  font-size: 0;
+  background:url("../img/new-flag.png") no-repeat 0 0;
+}
+
+
+.prompting {
+  position: absolute;
+  display: none;
+}
+
 .prompting a {
   font-size: 14px;
   line-height: 18px;
+  font-family: "Cuprum", Arial,  sans-serif;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -1075,7 +1107,7 @@ body {
 }
 
 .product-column .card {
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 /* КАРТОЧКИ ПРОИЗВОДИТЕЛЕЙ */
@@ -1343,8 +1375,8 @@ body {
 /**************** ABOUT DRILL ****************/
 
 .drill-presses {
-  box-sizing: border-box;
-  height: 304px;
+  height: 260px;
+  margin: 0;
 
   background-color: #f2f6f8;
   border-top: 1px solid transparent;
@@ -1365,14 +1397,14 @@ body {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+  font-family: "PT Sans", Arial, sans-serif;
+
 }
 
 /**************** FOOTER ****************/
 
 .main-footer {
   margin-top: 93px;
-
-  border-top: 1px solid transparent;
 }
 
 .main-footer-catalog {
@@ -1423,7 +1455,7 @@ body {
 
 .footer-navigation .footer-nav-company {
   width: 547px;
-  margin-top: 25px;
+  margin-top: 26px;
   padding: 12px;
 }
 
@@ -1439,7 +1471,7 @@ body {
 }
 
 .footer-navigation .footer-nav-goods {
-  margin-top: 23px;
+  margin-top: 21px;
   padding-left: 35px;
 }
 
@@ -1485,7 +1517,7 @@ body {
 }
 
 .footer-copyright {
-  width: 230px;
+  width: 236px;
   margin: 0;
 
   font-size: 16px;
@@ -1495,19 +1527,31 @@ body {
 }
 
 .footer-social {
-  margin-left: 94px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 138px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .footer-social .btn-social {
-  color: #ffffff;
-  text-decoration: none;
+  width: 41px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-right: 5px;
 
+  text-decoration: none;
   background-color: #212a3a;
 }
 
 .footer-social .btn-social:hover,
 .footer-social .btn-social:active {
   background-color: #ee3643;
+  transition: 0.3s ease;
 }
 
 .footer-feedback,
