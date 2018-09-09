@@ -49,6 +49,7 @@ body {
   cursor: pointer;
 }
 
+
 /**************** HEADER ****************/
 
 .page-header {
@@ -899,7 +900,7 @@ body {
 .header-goods,
 .header-manufacturers {
   position: relative;
-
+  margin-top: 2px;
   margin-bottom: 21px;
 }
 
@@ -956,7 +957,6 @@ body {
   justify-content: space-between;
   width: 940px;
   margin: 0;
-  margin-bottom: 14px;
   padding: 0;
 }
 
@@ -1009,6 +1009,10 @@ body {
   text-decoration: line-through;
 }
 
+.hidden-price {  /*Скрывает старую цену если ненужна*/
+  visibility: hidden;
+}
+
 .actual-price {      /*Актуальная цена*/
   display: block;
   position: relative;
@@ -1017,6 +1021,7 @@ body {
   margin-top: 5px;
   margin-bottom: 20px;
   padding: 10px 30px;
+  padding-right: 13px;
 
   font-size: 17px;
   line-height: 18px;
@@ -1029,11 +1034,11 @@ body {
 .actual-price::after {
   content: "";
   position: absolute;
-  top: -1px;
-  right: -23px;
+  top: 0;
+  right: -37px;
   width: 0;
   height: 0;
-  border: 20px solid white;
+  border: 19px solid white;
   border-left-color: #ee3643;
 }
 
@@ -1044,16 +1049,36 @@ body {
   width: 60px;
   height: 60px;
   font-size: 0;
+  z-index: 15;
   background:url("../img/new-flag.png") no-repeat 0 0;
 }
-
 
 .prompting {
   position: absolute;
   display: none;
+  top: 0;
+  left: 0;
+  width: 218px;
+  height: 88px;
+  padding: 40px 0;
+  background-color: rgba(255,255,255,0.9);
+  z-index: 10;
+}
+
+.card:hover .prompting {
+  display: block;
 }
 
 .prompting a {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-top: 2px;
+  margin-bottom: 12px;
+  padding: 7px 0;
+
+
+  display: block;
   font-size: 14px;
   line-height: 18px;
   font-family: "Cuprum", Arial,  sans-serif;
@@ -1064,9 +1089,15 @@ body {
 .prompting .btn-buy {
   color: #ffffff;
 
+
+
+  padding-top: 11px;
+  padding-right: 2px;
+  padding-bottom: 5px;
+  padding-left: 6px;
   background-color: #63a63e;
-  border-radius: 2px;
-  box-shadow: 0 1px 0 1px #367315;
+  border-radius: 3px;
+  box-shadow: 0 3px 0 0 #367315;
 }
 
 .prompting .btn-buy:hover,
@@ -1080,9 +1111,14 @@ body {
 
 .prompting .btn-basket {
   color: #32425c;
+  padding: 0;
+  padding-top: 9px;
+
+  padding-bottom: 5px;
+
 
   border: 3px solid #63a63e;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 
 .prompting .btn-basket:hover,
