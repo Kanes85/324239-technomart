@@ -584,11 +584,12 @@ body {
   height: 123px;
 }
 
-.promo-data::after {
+.promo-data::after,
+.promo-bid::after {
   content: "";
   position: absolute;
-  top: 31px;
-  right: 13px;
+  top: 25px;
+  right: 20px;
   width: 90px;
   height: 90px;
 
@@ -596,34 +597,49 @@ body {
 
 }
 
-.color-orange::after {
-  background-image: url("../img/svg/icon-1.svg");
-  background-position: 16px 0;
-}
-
 .color-orange {
   background-color: #ffbf47;
 }
 
-.color-blue::after {
-  background-image: url("../img/svg/icon-2.svg");
-  background-position: 0 2px;
+.color-orange::after {
+  background-image: url("../img/svg/icon-1.svg");
+  background-position: 24px 6px;
 }
 
 .color-blue {
   background-color: #3bbce3;
 }
 
+.color-blue::after {
+  background-image: url("../img/svg/icon-2.svg");
+  background-positiomanufacturersn: 7px 8px;
+}
+
 .color-purple {
   background-color: #dc91d8;
+}
+
+.color-purple::after {
+  background-image: url("../img/svg/icon-3.svg");
+  background-position: 1px 6px;
 }
 
 .color-green {
   background-color: #8ed78f;
 }
 
+.color-green::after {
+  background-image: url("../img/svg/icon-4.svg");
+  background-position: 6px 0;
+}
+
 .color-lightorange {
   background-color: #ffc047;
+}
+
+.color-lightorange::after {
+  background-image: url("../img/svg/icon-5.svg");
+  background-position: 1px 6px;
 }
 
 .promo-title {
@@ -1281,7 +1297,7 @@ body {
 /* КАРТОЧКИ ПРОИЗВОДИТЕЛЕЙ */
 
 .manufacturers {
-  margin-bottom: 56px;
+  margin-bottom: 63px;
 }
 
 .cards-manufacturers {
