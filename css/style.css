@@ -116,6 +116,7 @@ body {
 }
 
 .icon-search path {
+  padding: 0;
   width: 17px;
   height: 17px;
 }
@@ -429,6 +430,10 @@ body {
 
 /* ЛИЧНЫЙ КАБИНЕТ */
 
+.user {
+  position: relative;
+}
+
 .header-user {
   width: 299px;
   margin-top: 12px;
@@ -450,10 +455,47 @@ body {
   color: #000000;
 
   background-color: #ffffff;
+  position: relative;
+}
+
+.user-name svg {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+}
+
+.user-name:hover svg path {
+  fill: #32425c;
+}
+
+.user-name:active svg path {
+  fill: #c5c5c5;
 }
 
 .header-user .user-name:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.btn-logout {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: -17px;
+  right: 3px;
+  padding: 10px 10px;
+  padding-top: 14px;
+}
+
+.btn-logout svg:hover polygon,
+.btn-logout svg:hover path {
+  fill: #32425c;
+  cursor: pointer;
+}
+
+.btn-logout svg:active polygon,
+.btn-logout svg:active path {
+  fill: #c5c5c5;
+  cursor: pointer;
 }
 
 .header-user .my-order,
@@ -541,6 +583,7 @@ body {
   padding: 0;
 
   list-style: none;
+  position: relative;
 }
 
 .breadcrumbs-way,
@@ -553,6 +596,32 @@ body {
   color: #000000;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.breadcrumbs-home::before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -2px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/svg/icon-home.svg");
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs li {
+  position: relative;
+}
+
+.breadcrumbs-way::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  right: 1px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/svg/icon-right-small.svg");
+  background-repeat: no-repeat;
 }
 
 /**************** PROMO BLOCK ****************/
