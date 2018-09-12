@@ -1389,6 +1389,7 @@ body {
 
   background-color: #f4f8f9;
   border-top: 1px solid transparent;
+
 }
 
 .service-title {
@@ -1422,6 +1423,18 @@ body {
   padding: 0;
 
   list-style: none;
+  position: relative;
+}
+
+.service-choice::after {
+  content: "";
+  position: absolute;
+  top: -47px;
+  right: 0;
+  width: 10px;
+  height: 279px;
+  background-image: url("../img/line-shadow.png");
+  background-repeat: no-repeat;
 }
 
 .service-choice li {
@@ -1466,11 +1479,50 @@ body {
 
 .service-slider-card {
   width: 620px;
+  position: relative;
+  z-index: 20;
 }
 
-.service-slider-card p {
+.service-slider-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 500px;
+  height: 300px;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.service-delivery::after {
+  background-image: url("../img/delivery.png");
+  background-position: 41px 23px;
+}
+
+.service-warranty::after {
+  background-image: url("../img/guarantee.png");
+  background-position: 41px 0;
+}
+
+.service-credit::after {
+  background-image: url("../img/credit.png");
+  background-position: 31px 0;
+}
+
+.service-delivery p {
   width: 260px;
   margin: 0;
+}
+
+.service-warranty p {
+  width: 340px;
+  margin: 0;
+}
+
+.service-credit p {
+  width: 260px;
+  margin: 0;
+  margin-bottom: 31px;
 }
 
 .slider-title {
@@ -1487,6 +1539,10 @@ body {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
+}
+
+.btn-credit {
+  padding: 10px 35px;
 }
 
 /**************** ABOUT US ****************/
@@ -1521,6 +1577,7 @@ body {
 .contacts p {
   font-size: 13px;
   line-height: 24px;
+  font-family: "PT Sans", Arial, sans-serif;
 }
 
 .company p {
@@ -1544,6 +1601,19 @@ body {
 
   font-size: 18px;
   line-height: 24px;
+  position: relative;
+}
+
+.delivery-list li::before {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: -36px;
+  width: 25px;
+  height: 2px;
+  background-image: url(../img/line.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .delivery-btn {
