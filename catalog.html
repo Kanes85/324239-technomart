@@ -34,10 +34,23 @@
         </form>
         <ul class="goods-section">
           <li>
-            <a class="bookmarks" href="#">Закладки: <span>0</span></a>
+            <a class="bookmarks" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="14px" height="16px" viewBox="0 0 14 16" enable-background="new 0 0 14 16" xml:space="preserve">
+              <path d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765
+              	C0.368,15.741,0,15.55,0,15V1c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1V15z" fill="rgba(255, 255, 255, 0.3)" />
+              </svg>
+              Закладки: <span>0</span></a>
           </li>
           <li>
-            <a class="basket basket-in" href="#">Корзина: <span>10</span></a>
+            <a class="basket" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+              	<circle cx="4.5" cy="13.5" r="1.5" fill="rgba(255, 255, 255, 0.3)" />
+              	<circle cx="12.5" cy="13.5" r="1.5" fill="rgba(255, 255, 255, 0.3)" />
+              	<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951" fill="rgba(255, 255, 255, 0.3)" />
+              </svg>
+              Корзина: <span>0</span></a>
           </li>
           <li>
             <a class="ordering" href="#">Оформить заказ</a>
@@ -122,9 +135,9 @@
       <h2 class="perforator-block">Перфораторы</h2>
     </div>
 
-<div class="goods-column conteiner">
-    <section class="filter">
-      <h2 class="visually-hidden">Фильтр</h2>
+    <div class="goods-column conteiner">
+      <section class="filter">
+        <h2 class="visually-hidden">Фильтр</h2>
 
         <p class="filter-block">Фильтр:</p>
 
@@ -134,14 +147,17 @@
             <p class="filter-item">
               <label class="visually-hidden" for="price-id">Выбор диапозона цены</label>
               <input class="switch-price" id="price-id" type="range" max="50000" min="0" name="price">
+
             </p>
             <p class="filter-item">
               <label class="visually-hidden" for="price-min">Цена от</label>
               <input class="filter-price-min" id="price-min" type="text" name="minimal">
+
             </p>
             <p class="filter-item">
               <label class="visually-hidden" for="price-max">Цена до</label>
               <input class="filter-price-max" id="price-max" type="text" name="maximal">
+
             </p>
           </fieldset>
 
@@ -192,9 +208,9 @@
 
         </form>
 
-    </section>
+      </section>
 
-    <section class="filter-goods">
+      <section class="filter-goods">
         <h2 class="visually-hidden">Карточки товаров</h2>
         <div class="sort">
           <span class="filter-sort">Сортировка:</span>
@@ -367,8 +383,8 @@
           <li><a class="btn-toggle next" href="#">Следующая</a></li>
         </ul>
 
-    </section>
-</div>
+      </section>
+    </div>
 
     <div class="drill-presses">
       <div class="conteiner">
@@ -387,9 +403,11 @@
         <div class="footer-contacts">
           <div class="logo-footer">
             <img class="logo" src="img/logo-footer.png" width="138" height="21" alt="Техномарт">
+
           </div>
           <p class="footer-addres">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7 (812) 555-05-55
+
           </p>
         </div>
 
@@ -496,7 +514,9 @@
       <h2 class="visually-hidden">Товар добавлен в корзину</h2>
       <div class="top-add-goods">
         <b class="add-goods">Товар добавлен в корзину!</b>
-        <button class="modal-close">Закрыть</button>
+        <button class="modal-close feedback-close">
+    <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
+          <span class="visually-hidden">Закрыть</span></button>
       </div>
     </div>
     <div class="bottom-add-goods">

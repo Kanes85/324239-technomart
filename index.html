@@ -17,6 +17,7 @@
       <div class="conteiner">
         <div class="header-logo">
           <img class="logo" src="img/logo.png" width="110" height="18" alt="Техномарт">
+
         </div>
         <form class="search-form" name="search" action="https://echo.htmlacademy.ru" method="get">
           <label for="search-goods" class="visually-hidden">Поиск товара:</label>
@@ -32,10 +33,23 @@
         </form>
         <ul class="goods-section">
           <li>
-            <a class="bookmarks" href="#">Закладки: <span>0</span></a>
+            <a class="bookmarks" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="14px" height="16px" viewBox="0 0 14 16" enable-background="new 0 0 14 16" xml:space="preserve">
+              <path d="M14,15c0,0.55-0.368,0.741-0.818,0.426l-5.363-3.765c-0.45-0.315-1.187-0.315-1.637,0l-5.364,3.765
+              	C0.368,15.741,0,15.55,0,15V1c0-0.55,0.45-1,1-1h12c0.55,0,1,0.45,1,1V15z" fill="rgba(255, 255, 255, 0.3)" />
+              </svg>
+              Закладки: <span>0</span></a>
           </li>
           <li>
-            <a class="basket" href="#">Корзина: <span>0</span></a>
+            <a class="basket" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="15px" height="15px" viewBox="0 0 15 15" enable-background="new 0 0 15 15" xml:space="preserve">
+              	<circle cx="4.5" cy="13.5" r="1.5" fill="rgba(255, 255, 255, 0.3)" />
+              	<circle cx="12.5" cy="13.5" r="1.5" fill="rgba(255, 255, 255, 0.3)" />
+              	<polygon points="15,2 4.07,2 3.648,0 0,0 0,2 2.031,2 4.016,11 15,11 15,9 9.441,9 15,6.951" fill="rgba(255, 255, 255, 0.3)" />
+              </svg>
+              Корзина: <span>0</span></a>
           </li>
           <li>
             <a class="ordering" href="#">Оформить заказ</a>
@@ -56,7 +70,14 @@
             <p class="header-info-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="header-join">
-            <a class="header-btn enter" href="#">Войти</a>
+            <a class="header-btn enter" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+              	 width="20px" height="17px" viewBox="0 0 20 17" enable-background="new 0 0 20 17" xml:space="preserve">
+              	<polygon points="14.875,8.5 6,0 6,6 0,6 0,11 6,11 6,17 " fill="rgba(195, 203, 210, 0.3)" />
+                <path d="M16.986,15.01h-5.027V17h5.027c2.178,0,3.004-1.81,3.029-3.026V3.028C19.99,1.811,19.164,0,16.986,0h-5.027
+              	v1.99h5.027c0.839,0,0.992,0.681,1.01,1.057v10.904C17.979,14.327,17.825,15.01,16.986,15.01z" fill="rgba(195, 203, 210, 0.3)" />
+              </svg>
+              Войти</a>
             <a class="header-btn registration" href="#">Регистрация</a>
           </div>
         </div>
@@ -103,7 +124,7 @@
 
       </ul>
 
-      <!-- КАРУСЕЛЬ -->
+      <!-- SLADER -->
       <div class="promo-bottom">
         <div class="promo-slider">
           <div class="slider-drill slide">
@@ -119,6 +140,8 @@
             <img src="img/sliade-2.jpg" width="620" height="266" alt="Каталог перфораторов">
             <a class="button button-slide" href="catalog.html">Открыть каталог</a>
           </div> -->
+          <button class="btn-nav btn-next"><span class="visually-hidden">Вперед</span></button>
+          <button class="btn-nav btn-return"><span class="visually-hidden">Назад</span></button>
         </div>
         <!-- КОНЕЦ КАРУСЕЛИ -->
 
@@ -325,6 +348,7 @@
 
         <p>Мы можем доставить ваш товар в самые отдаленнные точки России!<br>
         Техномарт работает со многими транспортными компаниями:
+
         </p>
         <ul class="delivery-list">
           <li>Деловые линии</li>
@@ -351,9 +375,11 @@
         <div class="footer-contacts">
           <div class="logo-footer">
             <img class="logo" src="img/logo-footer.png" width="138" height="21" alt="Техномарт">
+
           </div>
           <p class="footer-addres">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7 (812) 555-05-55
+
           </p>
         </div>
 
@@ -464,10 +490,12 @@
         <p class="feedback-item">
           <label for="feedback-name">Ваше имя:</label>
           <input type="text" id="feedback-name" name="name" placeholder="Имя Фамилия">
+
         </p>
         <p class="feedback-item">
           <label for="feedback-mail">Ваш e-mail:</label>
           <input type="email" id="feedback-mail" name="mail" placeholder="email@example.com">
+
         </p>
       </div>
       <p class="feedback-item feedback-center">
@@ -478,7 +506,9 @@
         <button class="button button-feedback" type="submit" name="send">Отправить</button>
       </div>
     </form>
-    <button class="modal-close">Закрыть</button>
+    <button class="modal-close">
+<svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
+      <span class="visually-hidden">Закрыть</span></button>
   </section>
 
   <!-- Модальное окно карты -->
@@ -486,7 +516,9 @@
     <h2 class="visually-hidden">Наше местоположение на карте</h2>
     <img src="img/map-big.jpg" width="940" height="446" alt="г.Санкт-Петербург,
         ул. Б.Конюшенная, д.19/8">
-    <button class="modal-close">Закрыть</button>
+    <button class="modal-close">
+<svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
+      <span class="visually-hidden">Закрыть</span></button>
   </section>
 
 
