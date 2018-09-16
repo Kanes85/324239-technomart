@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Техномарт</title>
@@ -362,7 +363,7 @@
         <h3 class="title-about">Контакты</h3>
         <p>Вы можете забрать товар сами, заехав в наш офис:</p>
         <img src="img/map.jpg" width="300" height="158" alt="г.Санкт-Петербург, ул. Б.Конюшенная, д.19/8">
-        <a class="button contacts-btn" href="#">Заблудились? Напишите нам!</a>
+        <a class="button contacts-btn" href="">Заблудились? Напишите нам!</a>
       </div>
 
     </section>
@@ -507,7 +508,6 @@
       </div>
     </form>
     <button class="modal-close">
-<svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
       <span class="visually-hidden">Закрыть</span></button>
   </section>
 
@@ -517,8 +517,27 @@
     <img src="img/map-big.jpg" width="940" height="446" alt="г.Санкт-Петербург,
         ул. Б.Конюшенная, д.19/8">
     <button class="modal-close">
-<svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
-      <span class="visually-hidden">Закрыть</span></button>
+      <span class="visually-hidden">Закрыть</span>
+    </button>
+  </section>
+
+  <!-- МОДАЛЬНОЕ ОКНО -->
+  <section class="modal-add-goods">
+    <div class="add-goods-center">
+      <h2 class="visually-hidden">Товар добавлен в корзину</h2>
+      <div class="top-add-goods">
+        <b class="add-goods">Товар добавлен в корзину!</b>
+        <button class="modal-close feedback-close">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      </div>
+    </div>
+    <div class="bottom-add-goods">
+      <div class="add-goods-center add-goods-column">
+        <a class="button btn-place-order" href="#">Оформить заказы</a>
+        <a class="btn-continue" href="#">Продолжить покупки</a>
+      </div>
+    </div>
   </section>
 
 

@@ -3,8 +3,9 @@
 
 <head>
   <meta charset="UTF-8">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> -->
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Перфораторы</title>
@@ -141,66 +142,73 @@
 
         <p class="filter-block">Фильтр:</p>
 
+
+        <!-- ФОРМА ПОЛЗУНКА ВЫБОРА ДИАПОЗОНА -->
         <form class="filter-manufacturers" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="price-filter">
             <legend>Цена:</legend>
-            <p class="filter-item">
-              <label class="visually-hidden" for="price-id">Выбор диапозона цены</label>
-              <input class="switch-price" id="price-id" type="range" max="50000" min="0" name="price">
 
-            </p>
-            <p class="filter-item">
-              <label class="visually-hidden" for="price-min">Цена от</label>
-              <input class="filter-price-min" id="price-min" type="text" name="minimal">
+            <div class="price-filter-column">
+              <div class="filter-item multiple-rage">
+                <label class="visually-hidden" for="price-id">Выбор диапозона цены</label>
+                <input class="visually-hidden switch-price" id="price-id" type="range" max="50000" min="0" name="price">
+                <div class="filter-range">
+                  <div class="range">
+                    <span class="ring-range-left"></span>
+                    <span class="ring-range-right"></span>
+                  </div>
+                </div>
+              </div>
 
-            </p>
-            <p class="filter-item">
-              <label class="visually-hidden" for="price-max">Цена до</label>
-              <input class="filter-price-max" id="price-max" type="text" name="maximal">
+              <div class="filter-item">
+                <label class="visually-hidden" for="price-min">Цена от</label>
+                <input class="filter-price-min" id="price-min" type="text" name="minimal" value="0">
+              </div>
 
-            </p>
+              <div class="filter-item">
+                <label class="visually-hidden" for="price-max">Цена до</label>
+                <input class="filter-price-max" id="price-max" type="text" name="maximal" value="30000">
+              </div>
+            </div>
+
           </fieldset>
-
-          <hr class="filter-border-time">
 
           <fieldset class="manufacturer-filter">
             <legend>Производители:</legend>
             <ul class="filter-row">
               <li class="filter-item">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-bosch" name="bosch" checked>
-                <label for="filter-bosch">Bosch</label>
+                <label class="filter-checkbox" for="filter-bosch">Bosch</label>
               </li>
               <li class="filter-item">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-interscol" name="interscol">
-                <label for="filter-interscol">Интерскол</label>
+                <label class="filter-checkbox" for="filter-interscol">Интерскол</label>
               </li>
               <li class="filter-item">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-makita" name="makita" checked>
-                <label for="filter-makita">Makita</label>
+                <label class="filter-checkbox" for="filter-makita">Makita</label>
               </li>
               <li class="filter-item">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-dewalt" name="dewalt">
-                <label for="filter-dewalt">Dewalt</label>
+                <label class="filter-checkbox" for="filter-dewalt">Dewalt</label>
               </li>
               <li class="filter-item">
                 <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" id="filter-hitachi" name="hitachi">
-                <label for="filter-hitachi">Hitachi</label>
+                <label class="filter-checkbox" for="filter-hitachi">Hitachi</label>
               </li>
             </ul>
           </fieldset>
-
-          <hr class="filter-border">
 
           <fieldset class="power-filter">
             <legend>Питание:</legend>
             <ul class="filter-row">
               <li class="filter-item">
                 <input class="visually-hidden filter-input filter-input-radio" id="filter-accumulator" type="radio" name="power-supply" value="accumulator" checked>
-                <label for="filter-accumulator">Аккумуляторные</label>
+                <label class="filter-radio" for="filter-accumulator">Аккумуляторные</label>
               </li>
               <li class="filter-item">
                 <input class="visually-hidden filter-input filter-input-radio" id="filter-online" type="radio" name="power-supply" value="online">
-                <label for="filter-online">Сетевые</label>
+                <label class="filter-radio" for="filter-online">Сетевые</label>
               </li>
             </ul>
           </fieldset>
@@ -515,8 +523,8 @@
       <div class="top-add-goods">
         <b class="add-goods">Товар добавлен в корзину!</b>
         <button class="modal-close feedback-close">
-    <svg enable-background="new 0 0 21 21" height="21" viewBox="0 0 21 21" width="21" xmlns="http://www.w3.org/2000/svg"><path d="m13.273 10.5 7.422-7.422c.389-.389.389-1.025 0-1.414l-1.359-1.359c-.389-.389-1.025-.389-1.414 0l-7.422 7.422-7.422-7.422c-.389-.389-1.025-.389-1.414 0l-1.359 1.359c-.389.389-.389 1.025 0 1.414l7.422 7.422-7.421 7.422c-.389.389-.389 1.025 0 1.414l1.359 1.359c.389.389 1.025.389 1.414 0l7.422-7.422 7.422 7.422c.389.389 1.025.389 1.414 0l1.359-1.359c.389-.389.389-1.025 0-1.414z" fill="#ee3643"/></svg>
-          <span class="visually-hidden">Закрыть</span></button>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
       </div>
     </div>
     <div class="bottom-add-goods">
@@ -527,7 +535,7 @@
     </div>
   </section>
 
-
+<!-- <script type="text/javascript" src="js/script.js"></script> -->
 </body>
 
 </html>
