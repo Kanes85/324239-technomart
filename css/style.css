@@ -2178,6 +2178,10 @@ img {
   z-index: 100;
 }
 
+.feedback-window-show {
+  display: block;
+}
+
 .form-colunm {
   display: flex;
   justify-content: space-between;
@@ -2273,6 +2277,24 @@ img {
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.5);
 }
 
+.map-window-show {
+  display: block;
+}
+
+.map-window img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  margin: 0;
+}
+
+.map-window iframe {
+  position: relative;
+  z-index: 2;
+  border: none;
+}
+
 /* MODAL ADD GOODS */
 
 .modal-add-goods {
@@ -2288,6 +2310,10 @@ img {
 
   background-color: #ffffff;
   border-top: 5px solid #ee3643;
+}
+
+.modal-add-show {
+  display: block;
 }
 
 .add-goods-center {
@@ -2390,6 +2416,7 @@ img {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  z-index: 20;
 }
 
 .modal-close::before,
