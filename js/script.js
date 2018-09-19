@@ -35,9 +35,9 @@ var buyPopup = document.querySelector(".modal-add-goods");
 var buyClose = buyPopup.querySelector(".modal-close");
 var resume = buyPopup.querySelector(".btn-continue");
 
-if(buy.length > ) {
-  buy.addEventListener("click", function(evt) {
-      evt.preventDefault();
+
+buy.addEventListener("click", function(evt) {
+  evt.preventDefault();
   buyPopup.classList.add("modal-add-show");
 });
 
@@ -47,8 +47,8 @@ buyClose.addEventListener("click", function(evt) {
   buyPopup.classList.remove("modal-add-show");
 });
 }
-//
-// resume.addEventListener("click", function(evt) {
-//   evt.preventDefault();
-//   buyPopup.classList.remove("modal-add-show");
-// });
+
+resume.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  buyPopup.classList.remove("modal-add-show");
+});
