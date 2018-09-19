@@ -30,22 +30,24 @@ mapClose.addEventListener("click", function(evt) {
 
 // Модальное окно покупки
 
-var buy = document.querySelector(".btn-buy");
+var buy = document.querySelectorAll(".btn-buy");
 var buyPopup = document.querySelector(".modal-add-goods");
 var buyClose = buyPopup.querySelector(".modal-close");
 var resume = buyPopup.querySelector(".btn-continue");
 
-buy.addEventListener("click", function(evt) {
-  evt.preventDefault();
+if(buy) {
+  buy.addEventListener("click", function(evt) {
+      evt.preventDefault();
   buyPopup.classList.add("modal-add-show");
 });
+}
 
 buyClose.addEventListener("click", function(evt) {
   evt.preventDefault();
   buyPopup.classList.remove("modal-add-show");
 });
-
-resume.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  buyPopup.classList.remove("modal-add-show");
-});
+//
+// resume.addEventListener("click", function(evt) {
+//   evt.preventDefault();
+//   buyPopup.classList.remove("modal-add-show");
+// });
