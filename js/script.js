@@ -29,6 +29,7 @@ mapClose.addEventListener("click", function(evt) {
 });
 
 // Модальное окно покупки
+
 var buy = document.querySelector(".btn-buy");
 var buyPopup = document.querySelector(".modal-add-goods");
 var buyClose = buyPopup.querySelector(".modal-close");
@@ -48,16 +49,3 @@ resume.addEventListener("click", function(evt) {
   evt.preventDefault();
   buyPopup.classList.remove("modal-add-show");
 });
-
-
-
-
-// window.addEventListener("keydown", function (evt) {
-//     if (evt.keyCode === 27) {
-//       evt.preventDefault();
-//       if (popup.classList.contains("modal-show")) {
-//         popup.classList.remove("modal-show");
-//         popup.classList.remove("modal-error");
-//       }
-//     }
-//   });

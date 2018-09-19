@@ -3,8 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -67,7 +65,8 @@
             <h1 class="header-slogan">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
           </div>
           <div class="header-contacts">
-            <p class="header-info-phone">+7 (812) 555-05-55</p>
+            <!-- x-ms-format-detection="none" Чтобы EDGE не переопределял стили телефона -->
+            <p class="header-info-phone" x-ms-format-detection="none">+7 (812) 555-05-55</p>
             <p class="header-info-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="header-join">
@@ -127,24 +126,36 @@
 
       <!-- SLADER -->
       <div class="promo-bottom">
+
         <div class="promo-slider">
-          <div class="slider-drill slide">
-            <h3 class="promo-name">Дрели</h3>
-            <p class="promo-description">Соседям на радость!</p>
-            <img src="img/sliade-1.jpg" width="620" height="266" alt="Каталог дрелей">
-            <a class="button button-slide" href="#">Открыть каталог</a>
+            <input class="visually-hidden" type="radio" id="product-1" name="toggle">
+            <input class="visually-hidden" type="radio" id="product-2" name="toggle" checked>
+          <div class="slider-controls">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
           </div>
 
-          <!-- <div class="slider-puncher slide">
-            <h3 class="promo-name">Перфораторы</h3>
-            <p class="promo-description">Настоящие мужские игрушки</p>
-            <img src="img/sliade-2.jpg" width="620" height="266" alt="Каталог перфораторов">
-            <a class="button button-slide" href="catalog.html">Открыть каталог</a>
-          </div> -->
+          <ul class="slider-list">
+
+            <li class="slider-drill slide" id="slide1">
+              <h3 class="promo-name">Перфораторы</h3>
+              <p class="promo-description">Соседям на радость!</p>
+              <img src="img/sliade-2.jpg" width="620" height="266" alt="Каталог перфораторов">
+              <a class="button button-slide" href="catalog.html">Открыть каталог</a>
+            </li>
+
+            <li class="slider-drill slide" id="slide2">
+              <h3 class="promo-name">Дрели</h3>
+              <p class="promo-description">Соседям на радость!</p>
+              <img src="img/sliade-1.jpg" width="620" height="266" alt="Каталог дрелей">
+              <a class="button button-slide" href="#">Открыть каталог</a>
+            </li>
+
+          </ul>
           <button class="btn-nav btn-next"><span class="visually-hidden">Вперед</span></button>
           <button class="btn-nav btn-return"><span class="visually-hidden">Назад</span></button>
         </div>
-        <!-- КОНЕЦ КАРУСЕЛИ -->
+        <!-- END SLIDER -->
 
         <ul class="promo-proposals">
 
@@ -170,7 +181,7 @@
         <h2 class="title-block">Популярные товары:</h2>
         <a class="button button-popular" href="#">Все популярные товары</a>
       </div>
-
+      <div class="conteiner-card-product">
       <ul class="card-product">
 
         <li class="card">
@@ -231,6 +242,7 @@
         </li>
 
       </ul>
+    </div>
 
     </section>
 
@@ -241,6 +253,7 @@
         <a class="button button-manufacturers" href="#">Все производители</a>
       </div>
 
+      <div class="conteiner-cards-manufacturers">
       <ul class="cards-manufacturers">
         <li class="title-manufacturer">
           <a href="#">
@@ -291,6 +304,7 @@
             </a>
         </li>
       </ul>
+    </div>
 
     </section>
 
@@ -305,34 +319,38 @@
         <div class="carousel">
           <ul class="service-choice">
             <li>
-              <a href="#" class="service-slide-btn">Доставка</a>
+              <a href="#" class="service-slide-btn" for="proposal-1">Доставка</a>
             </li>
             <li>
-              <a href="#" class="service-slide-btn">Гарантия</a>
+              <a href="#" class="service-slide-btn" for="proposal-2">Гарантия</a>
             </li>
             <li>
-              <a href="#" class="service-slide-btn">Кредит</a>
+              <a href="#" class="service-slide-btn" for="proposal-3">Кредит</a>
             </li>
           </ul>
           <!-- СЛАЙДЕР -->
           <div class="service-slider">
-            <div class="service-slider-card service-delivery">
+            <ul class="slider-list">
+
+            <li class="service-slider-card service-delivery" id="slide1">
               <h3 class="slider-title">Доставка</h3>
               <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-            </div>
+            </li>
 
-            <!-- <div class="service-slider-card service-warranty">
+            <!-- <li class="service-slider-card service-warranty" id="slide2">
               <h3 class="slider-title">Гарантия</h3>
               <p>Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
               <p>Дом уже восстановите как-нибудь сами.</p>
-            </div> -->
+            </li> -->
 
-            <!-- <div class="service-slider-card service-credit">
+            <!-- <li class="service-slider-card service-credit" id="slide2">
               <h3 class="slider-title">Кредит</h3>
               <p>Залезть в долговую яму стало проще!<br>
                  Кредитные консультанты придут вам на помощь.</p>
               <a class="button btn-credit" href="#">Отправить заявку</a>
-            </div> -->
+            </li> -->
+
+            </ul>
           </div>
         </div>
 
@@ -378,7 +396,8 @@
             <img class="logo" src="img/logo-footer.png" width="138" height="21" alt="Техномарт">
 
           </div>
-          <p class="footer-addres">
+          <!-- x-ms-format-detection="none" Чтобы EDGE не переопределял стили телефона -->
+          <p class="footer-addres" x-ms-format-detection="none">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7 (812) 555-05-55
 
           </p>
@@ -501,7 +520,7 @@
       </div>
       <p class="feedback-item feedback-center">
         <label for="feedback-letter">Текст письма:</label>
-        <textarea id="feedback-letter" rows="7" cols="87" name="letter" placeholder="В свободной форме"></textarea>
+        <textarea class="letter-feedback" id="feedback-letter" rows="7" cols="87" name="letter" placeholder="В свободной форме"></textarea>
       </p>
       <div class="feedback-bottom">
         <button class="button button-feedback" type="submit" name="send">Отправить</button>

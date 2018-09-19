@@ -3,8 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <!-- <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -68,7 +66,8 @@
             <h1 class="header-slogan">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
           </div>
           <div class="header-contacts">
-            <p class="header-info-phone">+7 (812) 555-05-55</p>
+            <!-- x-ms-format-detection="none" Чтобы EDGE не переопределял стили телефона -->
+            <p class="header-info-phone" x-ms-format-detection="none">+7 (812) 555-05-55</p>
             <p class="header-info-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="header-user">
@@ -251,7 +250,8 @@
           </ul>
         </div>
 
-        <ul class="card-product product-column">
+        <div class="card-goods-catalog">
+        <ul class=" product-column">
 
           <li class="card">
             <!-- кнопки при наведении -->
@@ -381,8 +381,8 @@
             <span class="old-price hidden-price">старая цена</span>
             <span class="actual-price">12500 Р.</span>
           </li>
-
         </ul>
+      </div>
 
         <ul class="toggle">
           <li class="toggle-current">1</li>
@@ -413,7 +413,8 @@
             <img class="logo" src="img/logo-footer.png" width="138" height="21" alt="Техномарт">
 
           </div>
-          <p class="footer-addres">
+          <!-- x-ms-format-detection="none" Чтобы EDGE не переопределял стили телефона -->
+          <p class="footer-addres" x-ms-format-detection="none">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7 (812) 555-05-55
 
           </p>
