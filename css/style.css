@@ -1570,7 +1570,7 @@ img {
 
 .card .name-goods {
   display: inline-block;
-  vertical-align:
+  vertical-align: middle;
 
   width: 160px;
   min-height: 40px;
@@ -1932,10 +1932,9 @@ margin-left: 20px;
   background-repeat: no-repeat;
 }
 
-.service-choice a {
+.service-choice label {
   display: block;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 240px;
   padding-top: 12px;
   padding-bottom: 17px;
@@ -1951,11 +1950,23 @@ margin-left: 20px;
   border-bottom: 1px solid #293449;
 }
 
-.service-choice a:hover {
+.service-choice label:hover {
   background-color: #293449;
 }
 
-.service-choice a:focus {
+.service-slider-card {
+  display: none;
+}
+
+#products-1:checked ~ .slider-list .service-delivery,
+#products-2:checked ~ .slider-list .service-warranty,
+#products-3:checked ~ .slider-list .service-credit {
+  display: block;
+}
+
+#products-1:checked ~ .service-choice label[for="products-1"],
+#products-2:checked ~ .service-choice label[for="products-2"],
+#products-3:checked ~ .service-choice label[for="products-3"] {
   color: #32425c;
 
   background-color: #ffffff;
