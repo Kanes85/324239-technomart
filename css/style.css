@@ -1576,7 +1576,7 @@ img {
 
 .card:hover,
 .card:focus {
-  border: none;
+  border-color: transparent;
   -webkit-box-shadow: 0 10px 30px 0 rgba(41, 52, 73, 0.5),
   0 9px 10px 0 rgba(41, 52, 73, 0.5);
           box-shadow: 0 10px 30px 0 rgba(41, 52, 73, 0.5),
@@ -2520,11 +2520,11 @@ img {
   }
 }
 
-@keyframes shake {
+@keyframes error {
   0%,
   100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 
   10%,
@@ -2532,16 +2532,16 @@ img {
   50%,
   70%,
   90% {
-    -webkit-transform: translateX(-10px);
-            transform: translateX(-10px);
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
   }
 
   20%,
   40%,
   60%,
   80% {
-    -webkit-transform: translateX(10px);
-            transform: translateX(10px);
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
   }
 }
 
@@ -2549,7 +2549,7 @@ img {
 
 .feedback-window {
   position: fixed;
-  bottom: 200px;
+  bottom: 150px;
   left: 50%;
   z-index: 100;
 
@@ -2584,7 +2584,6 @@ img {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
 }
-
 
 .feedback-item label {
   display: block;
@@ -2684,11 +2683,15 @@ img {
   width: 460px;
 }
 
+.modal-error {
+  animation: error 0.8s;
+}
+
 /* MODAL MAP */
 
 .map-window {
   position: fixed;
-  bottom: 350px;
+  bottom: 100px;
   left: 50%;
   z-index: 50;
 
@@ -2729,7 +2732,7 @@ img {
 
 .modal-add-goods {
   position: fixed;
-  top: 411px;
+  top: 100px;
   left: 50%;
   z-index: 50;
 
