@@ -27,7 +27,7 @@ if (popup) {
   var name = popup.querySelector(".feed-name");
   var mail = popup.querySelector(".feed-mail");
   form.addEventListener("submit", function (evt) {
-    if (!name.value || !mail.value) {
+    if (name.value=="" || mail.value=="") {
       evt.preventDefault();
       popup.classList.remove("modal-error");
       popup.offsetWidth = popup.offsetWidth;
@@ -46,8 +46,6 @@ if (popup) {
     }
   });
 }
-
-
 
 // Модальное окно карты
 if (mapPopup) {
