@@ -878,13 +878,13 @@ img {
   display: none;
 }
 
-#product-1:checked ~ .slider-list #slide2,
-#product-2:checked ~ .slider-list #slide1 {
+.product-1:checked ~ .slider-list .slide2,
+.product-2:checked ~ .slider-list .slide1 {
   display: block;
 }
 
-#product-1:checked ~ .slider-controls .btn-next,
-#product-2:checked ~ .slider-controls .btn-return {
+.product-1:checked ~ .slider-controls .btn-next,
+.product-2:checked ~ .slider-controls .btn-return {
   background-color: red;
 }
 
@@ -1970,15 +1970,15 @@ img {
   display: none;
 }
 
-#products-1:checked ~ .slider-list .service-delivery,
-#products-2:checked ~ .slider-list .service-warranty,
-#products-3:checked ~ .slider-list .service-credit {
+.products-1:checked ~ .slider-list .service-delivery,
+.products-2:checked ~ .slider-list .service-warranty,
+.products-3:checked ~ .slider-list .service-credit {
   display: block;
 }
 
-#products-1:checked ~ .service-choice label[for="products-1"],
-#products-2:checked ~ .service-choice label[for="products-2"],
-#products-3:checked ~ .service-choice label[for="products-3"] {
+.products-1:checked ~ .service-choice label[for="products-1"],
+.products-2:checked ~ .service-choice label[for="products-2"],
+.products-3:checked ~ .service-choice label[for="products-3"] {
   color: #32425c;
 
   background-color: #ffffff;
