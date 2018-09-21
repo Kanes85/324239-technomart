@@ -6,10 +6,8 @@
   <meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
   <link rel="stylesheet" href="css/min.normalize.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="stylesheet" href="css/min.style.css"> -->
   <title>Техномарт</title>
 </head>
 
@@ -20,12 +18,6 @@
       <div class="conteiner">
         <div class="header-logo">
           <img class="logo" src="img/logo.png" width="110" height="18" alt="Техномарт">
-
-
-
-
-
-
 
         </div>
         <form class="search-form" name="search" action="https://echo.htmlacademy.ru" method="get">
@@ -75,7 +67,6 @@
             <h1 class="header-slogan">Интернет-магазин строительных материалов и&nbsp;инструментов для ремонта</h1>
           </div>
           <div class="header-contacts">
-            <!-- x-ms-format-detection="none" Чтобы EDGE не переопределял стили телефона -->
             <p class="header-info-phone">+7 (812) 555-05-55</p>
             <p class="header-info-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
@@ -142,8 +133,8 @@
           <input class="visually-hidden" type="radio" id="product-2" name="toggle" checked>
 
           <div class="slider-controls">
-            <label for="product-1">Первый</label>
-            <label for="product-2">Второй</label>
+            <label for="product-1" class="btn-nav btn-return"><span class="visually-hidden">Вперед</span></label>
+            <label for="product-2" class="btn-nav btn-next"><span class="visually-hidden">Назад</span></label>
           </div>
 
           <ul class="slider-list">
@@ -151,35 +142,30 @@
             <li class="slider-drill slide" id="slide1">
               <h3 class="promo-name">Перфораторы</h3>
               <p class="promo-description">Настоящие мужские игрушки</p>
-              <img src="img/sliade-2.jpg" width="620" height="266" alt="Каталог перфораторов">
+              <img src="img/sliade-1.jpg" width="620" height="266" alt="Каталог перфораторов">
               <a class="button button-slide" href="#">Открыть каталог</a>
             </li>
 
             <li class="slider-drill slide" id="slide2">
               <h3 class="promo-name">Дрели</h3>
               <p class="promo-description">Соседям на радость!</p>
-              <img src="img/sliade-1.jpg" width="620" height="266" alt="Каталог дрелей">
+              <img src="img/sliade-2.jpg" width="620" height="266" alt="Каталог дрелей">
               <a class="button button-slide" href="catalog.html">Открыть каталог</a>
             </li>
 
           </ul>
-          <button id="arrow-right" class="btn-nav btn-next"><span class="visually-hidden">Вперед</span></button>
-          <button id="arrow-left" class="btn-nav btn-return"><span class="visually-hidden">Назад</span></button>
         </div>
         <!-- END SLIDER -->
 
         <ul class="promo-proposals">
-
           <li class="promo-bid color-green">
             <h3 class="promo-title">Скидки 50%</h3>
             <a class="promo-btn" href="#">На 350 товаров</a>
           </li>
-
           <li class="promo-bid color-lightorange">
             <h3 class="promo-title">Доставка</h3>
             <a class="promo-btn" href="#">Бесплатно</a>
           </li>
-
         </ul>
       </div>
 
@@ -382,13 +368,6 @@
 
         <p>Мы можем доставить ваш товар в самые отдаленнные точки России!<br>
         Техномарт работает со многими транспортными компаниями:
-
-
-
-
-
-
-
         </p>
         <ul class="delivery-list">
           <li>Деловые линии</li>
@@ -415,24 +394,9 @@
         <div class="footer-contacts">
           <div class="logo-footer">
             <img class="logo" src="img/logo-footer.png" width="138" height="21" alt="Техномарт">
-
-
-
-
-
-
-
           </div>
-          <!-- x-ms-format-detection="none" Чтобы EDGE не переопределял стили телефона -->
           <p class="footer-addres">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7 (812) 555-05-55
-
-
-
-
-
-
-
           </p>
         </div>
 
@@ -543,12 +507,10 @@
         <p class="feedback-item">
           <label for="feedback-name">Ваше имя:</label>
           <input class="feed-name" type="text" id="feedback-name" name="name" placeholder="Имя Фамилия">
-
         </p>
         <p class="feedback-item">
           <label for="feedback-mail">Ваш e-mail:</label>
           <input class="feed-mail" type="email" id="feedback-mail" name="mail" placeholder="email@example.com">
-
         </p>
       </div>
       <p class="feedback-item feedback-center">
@@ -593,8 +555,6 @@
     </div>
   </section>
 
-
-  <!-- <script src="js/script.js"></script> -->
   <script src="js/min.script.js"></script>
 </body>
 
