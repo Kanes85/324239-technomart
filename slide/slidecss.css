@@ -1,0 +1,211 @@
+/*
+Первичные стили:
+С ними работает слайд шоу
+*/
+
+#slides {
+    position: relative;
+    width: 620px;
+    height: 266px;
+    padding: 0px;
+    margin: 0px;
+    margin: 0 auto;
+    list-style-type: none;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 1;
+}
+
+.showing {
+    opacity: 1;
+    z-index: 2;
+}
+
+/*
+Второстепенные стили:
+Внешний вид; можете изменять
+*/
+
+.promo-slider .promo-name {
+  position: absolute;
+  top: 23px;
+  left: 23px;
+
+  margin: 0;
+
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.promo-slider .promo-description {
+  position: absolute;
+  min-width: 300px;
+  top: 61px;
+  left: 24px;
+
+  margin: 0;
+
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.button-slide {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  z-index: 50;
+
+  padding: 10px 48px;
+}
+
+.button:hover {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
+.button {
+  padding: 10px 30px;
+
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #ee3643;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+}
+
+.btn-nav {
+  position: absolute;
+  top: 8px;
+
+  width: 100px;
+  height: 266px;
+  margin: 0;
+  padding: 0;
+  z-index: 20;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.btn-next {
+  right: 322px;
+}
+
+.btn-return {
+  left: 322px;
+}
+
+.btn-nav::before {
+  content: "";
+  position: absolute;
+
+  width: 22px;
+  height: 40px;
+}
+
+.btn-nav:focus::before {
+  outline: 2px solid #48a8c0;
+}
+
+.btn-next::before {
+  top: 114px;
+  right: 20px;
+
+  background-image: url("../img/svg/icon-right.svg");
+  background-repeat: no-repeat;
+}
+
+.btn-return::before {
+  top: 114px;
+  left: 25px;
+
+  background-image: url("../img/svg/icon-left.svg");
+  background-repeat: no-repeat;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 220px;
+  left: 620px;
+  z-index: 20;
+  font-size: 0;
+}
+
+.slider-controls .dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 10px;
+
+  vertical-align: middle;
+  vertical-align: top;
+
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-controls .radio-active {
+  background-color: red;
+}
+
+/* .showing + #product-1:checked ~ #product-1:checked ~ .slider-controls label[for="product-1"] {background-color: red;} */
+
+/* #product-1:checked ~ .slider-list #slide1,
+#product-2:checked ~ .slider-list #slide2 {
+  display: block;
+} */
+
+
+
+/* #product-1:checked ~ .slider-controls label[for="product-1"],
+#product-2:checked ~ .slider-controls label[for="product-2"] {
+  background-color: red;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/

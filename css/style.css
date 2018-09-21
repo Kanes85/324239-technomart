@@ -857,10 +857,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
   min-width: 620px;
-
-  -ms-flex-wrap: wrap;
+  height: 266px;
+  background-color: #A9A4A4;
+  wrap: wrap;
 }
 
 .slider-list {
@@ -891,7 +893,6 @@ img {
   top: 220px;
   left: 295px;
   z-index: 20;
-
   font-size: 0;
 }
 
@@ -918,7 +919,7 @@ img {
   height: 266px;
   margin: 0;
   padding: 0;
-
+  z-index: 20;
   background-color: transparent;
   border: none;
   outline: none;
@@ -991,6 +992,7 @@ img {
 
 .promo-slider .promo-description {
   position: absolute;
+  min-width: 300px;
   top: 61px;
   left: 24px;
 
@@ -2390,7 +2392,6 @@ img {
   background-color: #ee3643;
 
   -webkit-transition: 0.3s ease;
-       -o-transition: 0.3s ease;
           transition: 0.3s ease;
 }
 
@@ -2901,12 +2902,10 @@ img {
 
 .modal-close::before {
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
 .modal-close::after {
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }

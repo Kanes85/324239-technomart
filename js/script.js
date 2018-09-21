@@ -1,8 +1,6 @@
 var link = document.querySelector(".contacts-btn");
 var popup = document.querySelector(".feedback-window");
 
-
-
 var mapLink = document.querySelector(".contacts img");
 var mapPopup = document.querySelector(".map-window");
 
@@ -36,7 +34,7 @@ if (popup) {
     }
   });
 
-  window.addEventListener('keydown', function(evt) {
+  window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (popup.classList.contains("feedback-window-show")) {
@@ -60,7 +58,7 @@ if (mapPopup) {
     mapPopup.classList.remove("map-window-show");
   });
 
-  window.addEventListener('keydown', function(evt) {
+  window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (mapPopup.classList.contains("map-window-show")) {
@@ -92,7 +90,7 @@ if (buyPopup) {
     buyPopup.classList.remove("modal-add-show");
   });
 
-  window.addEventListener('keydown', function(evt) {
+  window.addEventListener("keydown", function(evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (buyPopup.classList.contains("modal-add-show")) {
@@ -101,3 +99,40 @@ if (buyPopup) {
     }
   });
 }
+
+// СЛАЙДР
+
+var slides = document.querySelectorAll(".slide");
+var countSlide = slides.length;
+var nextSlide = document.querySelector('.btn-next');
+var previousSlide = document.querySelector('.btn-return');
+// var dotSlide = document.querySelectorAll('.slider-controls');
+var currentSlide = 0;
+
+if (slides.length > 0) {
+  nextSlide.addEventListener('click', function(evt) {
+    if (currentSlide < countSlide - 1) {
+      evt.preventDefault();
+      currentSlide = currentSlide + 1;
+      showSlide(currentSlide);
+    };
+  });
+
+  previousSlide.addEventListener('click', function(evt) {
+    if (currentSlide > 0) {
+      evt.preventDefault();
+      currentSlide = currentSlide - 1;
+      showSlide(currentSlide);
+    };
+  });
+}
+
+//   function showSlide(currentSlide) {
+//     for (var i = 0; i < countSlide; i++) {
+//       slides[i].classList.remove('offer-slide-active');
+//       dotSlide[i].classList.add('slide-indicators-current');
+//     };
+//     slides[currentSlide].classList.add('offer-slide-active');
+//     dotSlide[currentSlide].classList.remove('slide-indicators-current');
+//   };
+// };
