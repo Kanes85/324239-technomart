@@ -26,8 +26,8 @@ if (popup) {
   var form = popup.querySelector(".form-feedback");
   var name = popup.querySelector(".feed-name");
   var mail = popup.querySelector(".feed-mail");
-  form.addEventListener("submit", function (evt) {
-    if (name.value=="" || mail.value=="") {
+  form.addEventListener("submit", function(evt) {
+    if (name.value == "" || mail.value == "") {
       evt.preventDefault();
       popup.classList.remove("modal-error");
       popup.offsetWidth = popup.offsetWidth;
@@ -36,7 +36,7 @@ if (popup) {
     }
   });
 
-    window.addEventListener('keydown', function(evt) {
+  window.addEventListener('keydown', function(evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
       if (popup.classList.contains("feedback-window-show")) {

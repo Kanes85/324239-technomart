@@ -3,10 +3,13 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="format-detection" content="telephone=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="css/min.normalize.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="css/min.style.css">
   <title>Техномарт</title>
 </head>
 
@@ -17,6 +20,10 @@
       <div class="conteiner">
         <div class="header-logo">
           <img class="logo" src="img/logo.png" width="110" height="18" alt="Техномарт">
+
+
+
+
 
 
 
@@ -69,7 +76,7 @@
           </div>
           <div class="header-contacts">
             <!-- x-ms-format-detection="none" Чтобы EDGE не переопределял стили телефона -->
-            <p class="header-info-phone" x-ms-format-detection="none">+7 (812) 555-05-55</p>
+            <p class="header-info-phone">+7 (812) 555-05-55</p>
             <p class="header-info-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           </div>
           <div class="header-join">
@@ -377,6 +384,10 @@
 
 
 
+
+
+
+
         </p>
         <ul class="delivery-list">
           <li>Деловые линии</li>
@@ -406,10 +417,18 @@
 
 
 
+
+
+
+
           </div>
           <!-- x-ms-format-detection="none" Чтобы EDGE не переопределял стили телефона -->
-          <p class="footer-addres" x-ms-format-detection="none">
+          <p class="footer-addres">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br> +7 (812) 555-05-55
+
+
+
+
 
 
 
@@ -523,21 +542,23 @@
         <p class="feedback-item">
           <label for="feedback-name">Ваше имя:</label>
           <input class="feed-name" type="text" id="feedback-name" name="name" placeholder="Имя Фамилия">
+
         </p>
         <p class="feedback-item">
           <label for="feedback-mail">Ваш e-mail:</label>
           <input class="feed-mail" type="email" id="feedback-mail" name="mail" placeholder="email@example.com">
+
         </p>
       </div>
-        <p class="feedback-item feedback-center">
+      <p class="feedback-item feedback-center">
         <label for="feedback-letter">Текст письма:</label>
         <textarea class="letter-feedback" id="feedback-letter" rows="7" cols="87" name="letter" placeholder="В свободной форме"></textarea>
-        </p>
-        <div class="feedback-bottom">
-          <button class="button button-feedback" type="submit" name="send">Отправить</button>
-        </div>
-      </form>
-      <button class="modal-close">
+      </p>
+      <div class="feedback-bottom">
+        <button class="button button-feedback" type="submit" name="send">Отправить</button>
+      </div>
+    </form>
+    <button class="modal-close">
         <span class="visually-hidden">Закрыть</span></button>
   </section>
 
@@ -572,7 +593,8 @@
   </section>
 
 
-  <script src="js/script.js"></script>
+  <!-- <script src="js/script.js"></script> -->
+  <script src="js/min.script.js"></script>
 </body>
 
 </html>
