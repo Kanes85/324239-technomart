@@ -217,7 +217,6 @@ img {
 
 .search-form .form-search::placeholder {
   font-size: 17px;
-  line-height: 18px;
   color: #ffffff;
 }
 
@@ -707,7 +706,7 @@ img {
 /**************** PROMO BLOCK ****************/
 
 .promo-top {
-  margin-bottom: 45px;
+  margin-bottom: 54px;
 }
 
 .promo-card,
@@ -732,11 +731,7 @@ img {
 .promo-data,
 .promo-bid {
   position: relative;
-
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   width: 300px;
-  height: 123px;
 }
 
 .promo-data::after,
@@ -744,7 +739,7 @@ img {
   content: "";
   position: absolute;
   top: 25px;
-  right: 20px;
+  right: 21px;
 
   width: 90px;
   height: 90px;
@@ -798,11 +793,14 @@ img {
 }
 
 .promo-title {
-  position: absolute;
-  top: 21px;
-  left: 22px;
+  display: inline-block;
+  width:170px;
+  margin-top: 21px;
+  margin-left: 23px;
+  margin-right: 5px;
+  margin-bottom: 12px;
+  word-wrap: break-word;
 
-  margin: 0;
 
   font-weight: bold;
   font-size: 24px;
@@ -811,17 +809,19 @@ img {
 }
 
 .promo-btn {
-  position: absolute;
-  top: 63px;
-  left: 25px;
 
-  display: block;
+  display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+
+  margin-left: 25px;
+  margin-bottom: 22px;
   width: 135px;
-  margin: 0;
+
   padding-top: 10px;
   padding-bottom: 10px;
+  /* padding-left: 10px;
+  padding-right: 10px; */
 
   font-size: 14px;
   line-height: 18px;
@@ -899,8 +899,8 @@ img {
 
 .slider-controls label {
   display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   margin-right: 10px;
 
   vertical-align: middle;
@@ -948,7 +948,7 @@ img {
   content: "";
   position: absolute;
   top: -108px;
-  left: -291px;
+  left: -292px;
 
   width: 22px;
   height: 40px;
@@ -979,7 +979,7 @@ img {
 .promo-slider .promo-name {
   position: absolute;
   top: 23px;
-  left: 23px;
+  left: 24px;
 
   margin: 0;
 
@@ -993,7 +993,7 @@ img {
 .promo-slider .promo-description {
   position: absolute;
   top: 61px;
-  left: 24px;
+  left: 25px;
 
   min-width: 300px;
   margin: 0;
@@ -1009,7 +1009,11 @@ img {
   left: 25px;
   z-index: 50;
 
-  padding: 10px 48px;
+  /* padding: 10px 48px; */
+  padding-top: 11px;
+  padding-right: 46px;
+  padding-bottom: 9px;
+  padding-left: 50px;
 }
 
 .button:hover {
@@ -1475,7 +1479,7 @@ img {
   position: relative;
 
   margin-top: 2px;
-  margin-bottom: 21px;
+  margin-bottom: 19px;
 }
 
 .popular-goods .title-block,
@@ -1513,7 +1517,7 @@ img {
 
 .button-manufacturers {
   position: absolute;
-  top: 23px;
+  top: 25px;
   right: 25px;
 
   padding: 10px 68px;
@@ -1776,7 +1780,7 @@ img {
 /* КАРТОЧКИ ПРОИЗВОДИТЕЛЕЙ */
 
 .manufacturers {
-  margin-bottom: 63px;
+  margin-bottom: 66px;
 }
 
 .conteiner-cards-manufacturers {
@@ -1807,11 +1811,14 @@ img {
 }
 
 .cards-manufacturers img {
-  outline: 1px solid #eaeaea;
+  box-sizing: border-box;
+  width: 220px;
+  height: 145px;
+  border: 1px solid #eaeaea;
 }
 
 .title-manufacturer:hover img {
-  outline: none;
+  border: transparent;
   -webkit-box-shadow: 0 8px 30px 0 rgba(41, 52, 73, 0.5);
           box-shadow: 0 8px 30px 0 rgba(41, 52, 73, 0.5);
 }
@@ -2147,7 +2154,13 @@ img {
 }
 
 .delivery-btn {
+  display: inline-block;
   padding: 10px 40px;
+  text-align: center;
+  /* width: 220px; */
+  /* box-sizing: border-box; */
+  /* margin-right: 5px; */
+  border: 1px solid transparent;
 }
 
 .contacts img {
@@ -2155,7 +2168,10 @@ img {
 }
 
 .contacts-btn {
+  display: inline-block;
+  text-align: center;
   padding: 10px 61px;
+
 }
 
 /**************** ABOUT DRILL ****************/
@@ -2241,6 +2257,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
 
   list-style: none;
