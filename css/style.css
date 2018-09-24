@@ -59,7 +59,7 @@ img {
 
 .page-header {
   min-height: 320px;
-  margin-bottom: 59px;
+  /* margin-bottom: 59px; */
 
   color: #000000;
 
@@ -68,10 +68,12 @@ img {
 
 .page-header-catalog {
   min-height: 320px;
+  margin-bottom: 0;
 
   color: #000000;
 
   background-color: #f3f7f8;
+  border-bottom: 1px solid transparent;
 }
 
 .page-header-top {
@@ -316,7 +318,7 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 
   -webkit-box-align: start;
   -webkit-box-pack: justify;
@@ -579,47 +581,98 @@ img {
 
 /* МЕНЮ НАВИГАЦИИ */
 
+.main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+
+  background-color: #32425c;
+
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+}
+
 .main-menu .navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-      flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: stretch;
-  width: 940px;
   margin: 0;
-  padding-left: 0;
+  padding: 0;
 
-  list-style: none;
-
-  -webkit-box-pack: justify;
-  -ms-flex-line-pack: stretch;
-  -ms-flex-pack: justify;
-  -ms-flex-wrap: wrap;
+  list-style-type: none;
 }
 
 .navigation li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   flex-grow: 1;
-  flex-shrink: 0;
-  min-width: 127px;
+  justify-content: center;
+  margin: 0 auto;
 
   -webkit-box-flex: 1;
-  -ms-flex-negative: 0;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -ms-flex-positive: 1;
+}
+
+.navigation li:first-child .main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  padding-left: 21px;
+
+  -webkit-box-flex: 1;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -ms-flex-positive: 1;
+}
+
+.navigation li:last-child .main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  padding-right: 24px;
+
+  -webkit-box-flex: 1;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   -ms-flex-positive: 1;
 }
 
 .main-menu .main-nav {
-  display: block;
-  padding: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 18px;
 
   font-size: 17px;
   line-height: 17px;
+  font-family: "Cuprum", arial;
   text-align: center;
   color: #ffffff;
   text-decoration: none;
 
   background-color: #32425c;
   border-bottom: 5px solid #293449;
+
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  -ms-flex-align: center;
+  -ms-flex-pack: center;
 }
 
 .main-menu .main-nav:hover {
@@ -644,7 +697,7 @@ img {
   align-items: baseline;
   width: 355px;
   margin: 0;
-  margin-top: 18px;
+  margin-top: 17px;
   padding: 0;
 
   list-style: none;
@@ -731,6 +784,7 @@ img {
 .promo-data,
 .promo-bid {
   position: relative;
+
   width: 300px;
 }
 
@@ -794,34 +848,28 @@ img {
 
 .promo-title {
   display: inline-block;
-  width:170px;
+  width: 170px;
   margin-top: 21px;
-  margin-left: 23px;
   margin-right: 5px;
   margin-bottom: 12px;
-  word-wrap: break-word;
-
+  margin-left: 23px;
 
   font-weight: bold;
   font-size: 24px;
   line-height: 30px;
   color: #ffffff;
+  word-wrap: break-word;
 }
 
 .promo-btn {
-
   display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-
-  margin-left: 25px;
-  margin-bottom: 22px;
   width: 135px;
-
+  margin-bottom: 22px;
+  margin-left: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
-  /* padding-left: 10px;
-  padding-right: 10px; */
 
   font-size: 14px;
   line-height: 18px;
@@ -1009,7 +1057,6 @@ img {
   left: 25px;
   z-index: 50;
 
-  /* padding: 10px 48px; */
   padding-top: 11px;
   padding-right: 46px;
   padding-bottom: 9px;
@@ -1509,7 +1556,7 @@ img {
 
 .button-popular {
   position: absolute;
-  top: 25px;
+  top: 23px;
   right: 24px;
 
   padding: 10px 55px;
@@ -1595,8 +1642,8 @@ img {
   text-decoration: none;
 }
 
+/*Старая цена*/
 .old-price {
-  /*Старая цена*/
   display: inline-block;
   min-height: 20px;
 
@@ -1609,13 +1656,14 @@ img {
   cursor: default;
 }
 
+/*Скрывает старую цену если ненужна*/
 .hidden-price {
-  /*Скрывает старую цену если ненужна*/
-  visibility: hidden;
+    visibility: hidden;
 }
 
+/*Актуальная цена*/
 .actual-price {
-  position: relative;/*Актуальная цена*/
+  position: relative;
 
   display: block;
   width: 80px;
@@ -1811,9 +1859,11 @@ img {
 }
 
 .cards-manufacturers img {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 220px;
   height: 145px;
+
   border: 1px solid #eaeaea;
 }
 
@@ -2056,6 +2106,7 @@ img {
 
 .slider-title {
   margin: 0;
+  margin-top: -3px;
   margin-bottom: 24px;
 
   font-size: 36px;
@@ -2124,7 +2175,7 @@ img {
 }
 
 .delivery-list {
-  margin-bottom: 41px;
+  margin-bottom: 33px;
   padding-left: 36px;
 
   list-style: none;
@@ -2156,22 +2207,21 @@ img {
 .delivery-btn {
   display: inline-block;
   padding: 10px 40px;
+
   text-align: center;
-  /* width: 220px; */
-  /* box-sizing: border-box; */
-  /* margin-right: 5px; */
-  border: 1px solid transparent;
 }
 
 .contacts img {
-  margin-bottom: 39px;
+  margin-bottom: 31px;
 }
 
 .contacts-btn {
   display: inline-block;
-  text-align: center;
-  padding: 10px 61px;
+  padding: 10px;
+  padding-right: 59px;
+  padding-left: 64px;
 
+  text-align: center;
 }
 
 /**************** ABOUT DRILL ****************/
@@ -2209,7 +2259,7 @@ img {
 /**************** FOOTER ****************/
 
 .main-footer {
-  margin-top: 93px;
+  margin-top: 86px;
 }
 
 .main-footer-catalog {
@@ -2256,14 +2306,15 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+      flex-wrap: wrap;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin: 0;
 
   list-style: none;
 
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
+  -ms-flex-wrap: wrap;
 }
 
 .footer-navigation .footer-nav-company {
@@ -2392,6 +2443,7 @@ img {
   background-color: #ee3643;
 
   -webkit-transition: 0.3s ease;
+       -o-transition: 0.3s ease;
           transition: 0.3s ease;
 }
 
@@ -2892,10 +2944,12 @@ img {
 
 .modal-close::before {
   -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
 .modal-close::after {
   -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
